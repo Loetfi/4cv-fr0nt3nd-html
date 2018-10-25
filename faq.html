@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>ACV Faq</title>
+  <title>ACV FAQ</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,7 +37,7 @@
 
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/flaticon.css">
+  <link href="css/jquery.fatNav.css" rel="stylesheet" type="text/css">
   <link href="css/animate.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
   <link href="css/respond.css" rel="stylesheet">
@@ -45,7 +45,25 @@
 
 </head>
 <body><div class="preloader"></div>
-  <nav class="navbar bg-white navbar-inverse navbar-fixed-top" role="navigation">
+
+<!-- MOBILE MENU -->
+<div class="fat-nav mobile-menu">
+  <div class="fat-nav__wrapper">
+    <ul>
+      <li><a href="about-us.html">about us</a></li>
+      <li><a href="our-services.html">our product</a></li>
+      <li><a href="#">Booking inspection</a></li>
+      <li><a href="faq.html">faq</a></li>
+      <li><a href="contact-us.html">contact us</a></li>
+      <li class="mt10"><span><a class="ctc" href="tel:0318711818"> 031-879 9999</a></span></li>
+      <li><a href="#">Masuk</a></li>
+      <li><a data-toggle="modal" data-target="#ModalRegistration">Daftar</a></li>
+    </ul>
+  </div>
+</div>
+<!-- MOBILE MENU END -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top bg-white" role="navigation">
     <div class="bgnav"></div>
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -54,37 +72,27 @@
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right main-menu">
           <li><a href="about-us.html">about us</a></li>
           <li><a href="our-services.html">our product</a></li>
           <li><a href="#">Booking inspection</a></li>
           <li><a href="faq.html">faq</a></li>
           <li><a href="contact-us.html">contact us</a></li>
           <li class="ctc"><span><a href="tel:0318711818"> 031-879 9999</a></span></li>
-          <li><a href="#">Masuk</a></li>
-          <li><a href="#">Daftar</a></li>
-                <!--<li class="smd"><a href="#" title=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li class="smd"><a href="#" title=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                <li class="smd"><a href="#" title=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
-              </ul>
-            </div>
-            <!-- orenz mobile pull menu -->
-            <a href="javascript:void(0)" class="smobitrigger ion-navicon-round"><span>Menu</span></a>
-            <ul class="mobimenu">
-             <li><a href="#promo">Promo</a></li>
-             <li><a href="#event">Berita & event</a></li>
-             <li><a href="#about">Tentang Kami</a></li>
-             <li><a href="#">Layanan Pelanggan</a></li>
-             <li><a href="#">Hubungi kami</a></li>
-             <li class="ctc"><span><a href="tel:0318711818">031-2981999</a></span></li>
-             <li><a href="#">Masuk</a></li>
-             <li><a href="#">Daftar</a></li>
-           </ul>
+              <!--<li class="smd"><a href="#" title=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li class="smd"><a href="#" title=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+              <li class="smd"><a href="#" title=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li> -->
+         <li><a class="hover-cursor" data-toggle="modal" data-target="#ModalLogin">Masuk</a></li>
+         <!-- <li><a class="hover-cursor" data-toggle="modal" data-target="#ModalRegistration">Daftar</a></li> -->
+          <li><a href="registration-page.html">daftar</a></li>
+      </ul>
+    </div>
+           
 
      <!-- /.navbar-collapse -->
    </div>
    <!-- /.container -->
- </nav>
+</nav>
      
 
     <section class="parallax-services" data-parallax="scroll" data-image-src="img/faq-bg.jpg">
@@ -267,22 +275,21 @@
         </div>  
       </div>
     </section>
-    <div class="cta-footer mt60">
+    <div class="cta-footer mt120">
       <div class="container">
         <div class="col-md-8">
-          <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+          <h2>Ketahui kondisi kendaraan idaman Anda bersama Astra Car Valuation</h2>
           <p>Lorem ipsum dolor sit amet, consectetur</p>
         </div>
         <div class="col-md-4 text-center">
-          <a href="#" class="btn-green mt5">Booking inspection</a>
+          <a href="#" class="btn-green mt5" data-toggle="modal" data-target="#ModalBooking">Booking inspection</a>       
         </div>
       </div>
     </div>
     <footer>
       <div class="container">
-        <div class="col-md-6"><h3>Astra Car Valuation</h3></div>
-        <div class="col-md-6 foot-menu">
-          <ul>
+        <div class="col-sm-8 col-md-5 col-md-push-7">
+          <ul class="text-center">
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="">Term and Condition</a></li>
             <li class="socmed">
@@ -296,8 +303,11 @@
             </li>
           </ul>
         </div>
+        <div class="col-sm-4 col-md-7 col-md-pull-5 copy">
+          <span>Copyright © 2018 Astra Car Valuation</span>
+        </div>
       </div>
-    </footer>     
+    </footer>   
 
 
 
@@ -437,10 +447,6 @@
 
 
 
-
-
-
-
           <!-- Dragable Testimonial Section -->
           <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
           <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
@@ -450,11 +456,15 @@
           <script src="js/bootstrap.min.js"></script>
           <script src="js/parallax.js" type="text/javascript"></script>
           <script src="js/wow.js"></script>
-
-
-          <script>
+          <script src="js/jquery.fatNav.js"></script>
+           <script>
             new WOW().init();
           </script>
+          <script>
+            (function() {
+                $.fatNav();
+            }());
+          </script> 
 
           <script>
             function toggleChevron(e) {

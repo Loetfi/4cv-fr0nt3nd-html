@@ -97,11 +97,15 @@
    <!-- /.container -->
 </nav>
       <section>
-        <div class="gmap"><span class="overlay-light"></span>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.5224557638853!2d106.77812452917395!3d-6.251894799717169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f0ff77f07a91%3A0x21b8eca9315fe591!2sIBID!5e0!3m2!1sen!2sid!4v1539228269768" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+        <!-- <div class="gmap"><span class="overlay-light"></span>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.5224557638853!2d106.77812452917395!3d-6.251894799717169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f0ff77f07a91%3A0x21b8eca9315fe591!2sIBID!5e0!3m2!1sen!2sid!4v1539228269768" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div> -->
+         <div class="parallax-services" data-parallax="scroll" data-image-src="img/map.png">
+            <span class="overlay-light zindex-lower"></span>  
+         </div>
         <div class="container">
         <div class="col-md-12 contactus-section ztop">
-          <div class="box-shadow bg-white p25 mt30 mb30 col-md-12">
+          <div class="box-shadow bg-white bg-pattern-city section-registration">
             <h3 class="text-center">Contact Us</h3>
             <h5>Send us your enquiry and our friendly staff will get back to you within 24 hours</h5>
             <!-- <p>Send us your enquiry and our friendly staff will get back to you within 24 hours</p> -->
@@ -111,12 +115,15 @@
                   <fieldset>  
                     <div class="form-group">
                       <div class="col-md-8 col-md-offset-2">
+                        <div class="select-dropdown">
                           <select class="form-control form-control-lg" name="category" id="validationCustom03" onchange="ChangecatList()" required>
-                            <option value="General Inquiry">General Inquiry </option>
-                            <option value="General Inquiry">Categories Inquiry 2</option>
-                            <option value="General Inquiry">Categories Inquiry 3</option>
-                            <option value="General Inquiry">Categories Inquiry 2</option>
+                            <option value="General Inquiry">-- Pilih Kategori --</option>
+                            <option value="General Inquiry">Masukan/Saran</option>
+                            <option value="General Inquiry">Transaksi/Inspeksi saya</option>
+                            <option value="General Inquiry">Corporate Inspection</option>
+                            <option value="General Inquiry">Lain-lain</option>
                           </select>
+                        </div>  
                       </div>
                     </div>
                     <div class="form-group">
@@ -135,7 +142,7 @@
                       </div>
                      </div>
                      <div class="form-group text-center col-md-8">
-                          <button class="btn btn-info"><i class="fa fa-paper-plane"></i> Submit</button>
+                          <button class="btn btn-info"><i class="fa fa-paper-plane"></i> Kirim Pesan</button>
                       </div>
                   </fieldset>  
                 </form>  
@@ -147,22 +154,21 @@
       </section>
       
 
-    <div class="cta-footer mt60">
+    <div class="cta-footer mt120">
       <div class="container">
         <div class="col-md-8">
-          <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+          <h2>Ketahui kondisi kendaraan idaman Anda bersama Astra Car Valuation</h2>
           <p>Lorem ipsum dolor sit amet, consectetur</p>
         </div>
         <div class="col-md-4 text-center">
-          <a href="#" class="btn-green mt5">Booking inspection</a>
+          <a href="#" class="btn-green mt5" data-toggle="modal" data-target="#ModalBooking">Booking inspection</a>       
         </div>
       </div>
     </div>
     <footer>
       <div class="container">
-        <div class="col-md-6"><h3>Astra Car Valuation</h3></div>
-        <div class="col-md-6 foot-menu">
-          <ul>
+        <div class="col-sm-8 col-md-5 col-md-push-7">
+          <ul class="text-center">
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="">Term and Condition</a></li>
             <li class="socmed">
@@ -176,8 +182,11 @@
             </li>
           </ul>
         </div>
+        <div class="col-sm-4 col-md-7 col-md-pull-5 copy">
+          <span>Copyright © 2018 Astra Car Valuation</span>
+        </div>
       </div>
-    </footer>     
+    </footer> 
 
 
 
