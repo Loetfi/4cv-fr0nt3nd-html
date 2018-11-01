@@ -3440,6 +3440,7 @@ ul.timeline > li:before {
           line-height: 1.6;
           span {
             font-family: $font-tittle-bold;
+            display: inline-block;
             &:before{
               content:":";
               font-family: &font-tittle-light;
@@ -3492,8 +3493,16 @@ ul.timeline > li:before {
     font-family: $font-tittle;
     padding: 20px;
     .date {
+      font-family: $font-tittle-bold;
+      color: #69336c;
       span {
         padding-right: 60px;
+      }
+      .km {
+        font-family: $font-tittle-light;
+      }
+      time {
+        font-family: $font-tittle-light;
       }
     }
     .grader {
@@ -3504,11 +3513,12 @@ ul.timeline > li:before {
       li {
         list-style: none;
         display: inline-block;
-        margin:0;
         text-align: center;
+        padding-top: 20px;
         width: 16%;
         height: 100%;
         box-sizing: border-box;
+        vertical-align: top;
         h3 {
           margin: 0;
           color: #69336c;
@@ -3562,8 +3572,9 @@ ul.timeline > li:before {
       font-size: 16px;
     }
     p {
-      font-size: 13px;
+      font-size: 15px;
       padding-left: 20px;
+      font-family: $font-tittle;
     }
   }
   .note-info {
