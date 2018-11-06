@@ -3560,6 +3560,32 @@ ul.timeline > li:before {
     }
   }
 
+  .lst-duo {
+     -webkit-column-count: 2; /* Chrome, Safari, Opera */
+      -moz-column-count: 2; /* Firefox */
+      column-count: 2;
+      padding: 30px;
+      display:block;
+      -webkit-column-gap:80px; /* Chrome, Safari, Opera */
+      -moz-column-gap: 80px; /* Firefox */
+      column-gap: 80px;
+    li {
+      line-height:1.4;
+      color: #783f82;
+      padding-left: 10px;
+       span {
+        float: right;
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+        display: inline-block;
+        background-color: #71c307;
+        border-radius: 90px;
+        text-indent: 100%;
+        overflow: hidden;}
+      }  
+  }
+
   .inspec-note {
     background-color: #fcf9fc;
     display:inline-block;
@@ -3593,6 +3619,34 @@ ul.timeline > li:before {
     }
   }
 
+  .painting-section {
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    h2 {
+      padding:10px 30px;
+      display:block;
+      background-color: #fcf0fe;
+      border-left: 5px solid #74437b;
+      margin:0 -20px;
+      font-family: $font-tittle-bold;
+      color: #74437b;
+      font-size: 16px;
+    }
+  }
+
+  .img-interior {
+    padding:20px 20px 50px 20px;
+    display: inline-block;
+    img {
+      display: inline-block;
+      width: 50%;
+      float: left;
+      padding:20px;
+      box-sizing: border-box;
+    }
+  }
+
   .range-price {
     padding: 10px 90px;
     h3 {
@@ -3605,6 +3659,37 @@ ul.timeline > li:before {
     span {font-family: $font-tittle-light !important;padding-right: 5px;}
   }
 
+  .img-cat {
+    display: block;
+    img {
+      margin:10px auto;
+    }
+    ul {
+      display:block;
+      width: 100%;
+      padding: 0;
+      li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 40px;
+        font-size: 13px;
+        &:nth-child(1){
+          color: #2ea604;
+        }
+        &:nth-child(2){
+          color: #cdaa05;
+        }
+        &:nth-child(3){
+          color: #cd0521;
+        }
+      }
+    }
+    h6 {
+      font-family: $font-tittle-bold !important;
+      color: #a60417;
+    }
+  }
+
   .footer-report {
     position: absolute;
     bottom: 0;
@@ -3612,6 +3697,11 @@ ul.timeline > li:before {
     h4 {
       text-align: center;
       font-size: 13px;
+      &:before {
+        content:url("../img/assetsReport/footer.jpg");
+        margin:0 15px 0 -30px;
+        position: absolute;
+      }
       strong {
         color: #69336c;;
       }
