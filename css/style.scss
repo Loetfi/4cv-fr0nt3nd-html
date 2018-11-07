@@ -532,20 +532,36 @@ text-transform: uppercase;
   }
 }
 
-.btn-line-info {
-font-family: $font-default;
-background-color: transparent;
-border:1px solid #07db84;
-font-size: 14px;
-color: #07db84;
-padding: 10px 25px;
-border-radius:0 !important;
-display: inline-block;
-text-transform: uppercase;
-&:hover {
-  background-color: #07db84;
-  color: #ffffff;
+.btn-line-cancel {
+  font-family: $font-default;
+  background-color: transparent;
+  border:1px solid #0053fc;
+  font-size: 14px;
+  color: #0053fc;
+  padding: 10px 25px;
+  border-radius:0 !important;
+  display: inline-block;
+  text-transform: uppercase;
+  &:hover {
+    background-color: #0053fc;
+    color: #ffffff;
+  }
 }
+
+.btn-line-info {
+  font-family: $font-default;
+  background-color: transparent;
+  border:1px solid #07db84;
+  font-size: 14px;
+  color: #07db84;
+  padding: 10px 25px;
+  border-radius:0 !important;
+  display: inline-block;
+  text-transform: uppercase;
+  &:hover {
+    background-color: #07db84;
+    color: #ffffff;
+  }
 }
 
 .btn-info {
@@ -3687,6 +3703,19 @@ ul.timeline > li:before {
     h6 {
       font-family: $font-tittle-bold !important;
       color: #a60417;
+    }
+  }
+  .form-order-act {
+    label {
+      font-size: 12px;
+      color: #898989;
+      font-family: $font-ligth;
+    }
+    input {
+      margin-right: 5px;
+    }
+    button {
+      margin-bottom: 20px;
     }
   }
 

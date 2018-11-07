@@ -545,6 +545,20 @@ a:visited {
   .btn-a i {
     font-size: 10px; }
 
+.btn-line-cancel {
+  font-family: "open_sansregular", Helvetica, San serif;
+  background-color: transparent;
+  border: 1px solid #0053fc;
+  font-size: 14px;
+  color: #0053fc;
+  padding: 10px 25px;
+  border-radius: 0 !important;
+  display: inline-block;
+  text-transform: uppercase; }
+  .btn-line-cancel:hover {
+    background-color: #0053fc;
+    color: #ffffff; }
+
 .btn-line-info {
   font-family: "open_sansregular", Helvetica, San serif;
   background-color: transparent;
@@ -3197,6 +3211,15 @@ ul.timeline > li:before {
   .img-cat h6 {
     font-family: "NeoSans-bold", Helvetica, San serif !important;
     color: #a60417; }
+
+.form-order-act label {
+  font-size: 12px;
+  color: #898989;
+  font-family: "open_sanslight", Helvetica, San serif; }
+.form-order-act input {
+  margin-right: 5px; }
+.form-order-act button {
+  margin-bottom: 20px; }
 
 .footer-report {
   position: absolute;
