@@ -3598,7 +3598,21 @@ ul.timeline > li:before {
         background-color: #71c307;
         border-radius: 90px;
         text-indent: 100%;
-        overflow: hidden;}
+        overflow: hidden;
+        position: relative;
+        &:before {
+          content:"|";
+          position: relative;
+          margin: 0 10px;
+          color:#333333;
+          position: absolute;
+          }
+        &:after {
+          content:"|";
+          position: relative;
+          margin: 0 10px;
+          }  
+        }
       }  
   }
 
@@ -3742,6 +3756,81 @@ ul.timeline > li:before {
       margin:0;
     }
     img {
-      margin:10px 0;
+      margin:0;
+    }
+     .foot-note {
+      padding: 10px 30px 20px;
+      background-color: #fcf0fe;
+      h3 {
+        font-family: $font-tittle-bold;
+        margin: 10px 0;
+        color: #74437b;
+      }
+      p{
+        text-align: left !important;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .no-break {
+    span {
+      white-space: nowrap;
+      font-size: 13px;
+    }
+  }
+  .crash-level {
+    span{
+      white-space: nowrap;
+      font-size: 12px;
+      i {
+        font-style: normal;
+        color: #ffffff;
+        background-color: red;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        border-radius: 10px;
+        font-weight: 900;
+        font-size: 10px;
+        padding: 0 0 0 4px;
+        margin-right:7px;
+      }
+    }
+  }
+
+  .table-counting {
+    width: 100%;
+    display: block;
+     -webkit-column-count: 2; /* Chrome, Safari, Opera */
+      -moz-column-count: 2; /* Firefox */
+      column-count: 2;
+      padding: 30px;
+      display:block;
+      -webkit-column-gap:80px; /* Chrome, Safari, Opera */
+      -moz-column-gap: 80px; /* Firefox */
+      column-gap: 80px;
+    li {
+      width: 100%;
+      display: inline-block;
+      span {
+        display: inline-block;
+        border-right: 1px solid #333333;
+        white-space: nowrap;
+        font-size: 16px;
+        line-height: 2;
+        &:nth-child(1){
+          width: 40%;
+        }
+        &:nth-child(2){
+          width: 40%;
+          padding-left: 10px;
+        }
+        &:nth-child(3){
+          width: 5%;
+          text-align: center;
+        }
+      }
+
     }
   }
