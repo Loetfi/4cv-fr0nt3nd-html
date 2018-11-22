@@ -1728,7 +1728,7 @@ nav {
       font-size: 11px; }
 
 .mobile-menu {
-  display: none; }
+  display: block; }
   .mobile-menu li {
     padding: 7px 0; }
     .mobile-menu li a {

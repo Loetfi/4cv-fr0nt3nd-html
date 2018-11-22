@@ -39,36 +39,37 @@
 @media only screen and (min-width: 768px) and (max-width: 799px) {
 /* Styles */
 	.hamburger {display: block !important;}
-	 nav, .main-menu, .top-rcc{display: none !important;}
+	.main-menu,.top-rcc{display: none !important;}
 	.menu .top-logo {width: 100px !important;}
 	.brand:before {content: "profile menu"}
 	.otp-section img {display: none;}
-	.box-price .box h2 {font-size: 20px !important}
-
+	.advantage {background-image: none !important;}
+	.advantage p {text-align: center;}
+	.usp .number {text-align: center;font-size:26px;}
+	.usp img {margin-top: 30px;}
+	.carousel-caption h1 {font-size: 38px !important;margin-bottom:20px;}
+	.car-float {width: 300px;}
 }
 
-
-
+/*
 @media only screen (width: 767px) {
 	.hamburger {display: block !important;}
 	.main-menu,.top-rcc{display: none !important;}
 	.menu .top-logo {width: 100px !important;}
 	.brand:before {content: "profile menu"}
 	.otp-section img {display: none;}
-}
+} */
 
 
 /* Mobile Landscape Width to Tablet Portrait Width */
 @media only screen and (min-width: 361px) and (max-width: 767px) {
 	.hamburger {display: block !important;}
-	.main-menu,.top-rcc{display: none !important;}
+	 nav, .main-menu, .top-rcc{display: none !important;}
 	.menu .top-logo {width: 100px !important;}
 	.brand:before {content: "profile menu"}
-	footer .copy {text-align: center !important; font-size: 9px !important;}
-	footer ul {display: block;text-align: center;width: 100% !important;}
+	.otp-section img {display: none;}
+	.box-price .box h2 {font-size: 20px !important}
 }
-
-
 
 
 @media only screen and (min-width: 321px) and (max-width: 360px) {
@@ -103,14 +104,18 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
 	.hamburger {display: block !important;}
-	.main-menu,.top-rcc{display: none !important;}
 	.menu .top-logo {width: 90px !important;}
+	.carousel, .carousel-inner, .carousel-inner .item {height: 95vh}
+	.carousel-caption h1 {font-size: 28px !important;margin-bottom: 30px;}
+	.car-float {display: none !important;}
 	.caption-right {left: 10% !important}
 	.caption {bottom: 0; left: 20px;}
 	.document-info-bg {background-image: none;}
-
+	.advantage {background-image: none !important;}
+	.usp .number {text-align: center;font-size:26px;}
+	.usp img {margin-top: 30px;}
 	.slick-dots {display: none !important;}
-
+	.tittle-head {font-size: 18px;}
 	.brand:before {content: "profile menu"}
 	.otp-section .col-md-4 {display: none;}
 	.otp-section h2 {font-size: 19px;margin-top: 30px;}
@@ -135,25 +140,27 @@
  	.hamburger {display: block !important;}
 	.main-menu,.top-rcc{display: none !important;}
 	.menu .top-logo {width: 80px !important;}
+	.carousel, .carousel-inner, .carousel-inner .item {height: 90vh}
 	.caption-right {right: 4% !important}
 	.caption {bottom: 0;}
+	.document-info-bg {background-image: none;}
+	.advantage {background-image: none !important;}
+	.usp .number {text-align: center;font-size:26px;}
+	.usp img {margin-top: 30px;}
 	.foot-menu li {text-align: center;}
 	.carousel-caption h1 {font-size: 28px !important;margin-bottom: 30px;}
-	.carousel-caption p {display: none;}
 	.car-float {display: none !important;}
-	.advantage {background-image: none;}
+	.advantage {background-image: none !important;}
 	.advantage p {text-align: center;}
 	.testimonial {padding: 20px 0 0 0;}
 	.cta-home {text-align: center;}
 	.cta-home h2 {font-size: 20px;}
-
+	.tittle-head {font-size: 18px;}
 	.usp .number {text-align: center;}
 	.parallax-services {min-height: 300px;}
-
 	.slick-dots {display: none !important;}
 	.service-box .icon-services {background-size: contain;width: 50px;}
 	.service-box p {font-size: 13px;}
-
 	.accordion-faq {padding: 0!important;}
 	.brand:before {content: "profile menu";position: absolute;color: #000000;right:40px top:5px;}
 	.account-management .prof-info div {-webkit-column-count:1;-moz-column-count: 1;column-count: 1;}
