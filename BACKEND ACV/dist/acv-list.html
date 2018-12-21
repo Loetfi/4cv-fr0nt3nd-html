@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin ACV</title>
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <meta content="template language" name="keywords">
+  <meta content="Tamerlan Soziev" name="author">
+  <meta content="Admin dashboard html template" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="http://52.163.186.214/frontend/img/logo.png" rel="shortcut icon">
+  <link href="apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet" type="text/css">
+  <link href="bower_components/select2/dist/css/select2.min.css" rel="stylesheet">  
+  <link href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet"> 
+  <link href="bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
+  <link href="bower_components/slick-carousel/slick/slick.css" rel="stylesheet">
+  <link href="css/main.css?version=4.4.0" rel="stylesheet">
+  <link href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="menu-position-side menu-side-left full-screen">
+  <div class="all-wrapper solid-bg-all"> 
+    <div class="layout-w">
+        <!--------------------
+        START - Mobile Menu
+        -------------------->
+        <div class="menu-mobile menu-activated-on-click color-scheme-white">
+          <div class="mm-logo-buttons-w">
+            <a class="mm-logo" href="index.html"><img src="http://52.163.186.214/frontend/img/logo.png"><span>ACV</span></a>
+            <div class="mm-buttons">
+              <div class="content-panel-open">
+                <div class="os-icon os-icon-grid-circles"></div>
+              </div>
+              <div class="mobile-menu-trigger">
+                <div class="os-icon os-icon-hamburger-menu-1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-and-user"> 
+          </div>
+        </div>
+        <!--------------------
+        END - Mobile Menu
+        --------------------><!--------------------
+        START - Main Menu
+        -------------------->
+        <div class="menu-w color-scheme-light color-style-transparent menu-position-side menu-side-left menu-layout-compact sub-menu-style-inside sub-menu-color-light selected-menu-color-light menu-activated-on-click menu-has-selected-link">
+          <div class="logo-w">
+            <a class="logo" href="acv-dashboard.html">
+              <img src="http://52.163.186.214/frontend/img/logo.png">
+              <div class="logo-label">
+                Backend ACV
+              </div>
+            </a>
+          </div>
+          <ul class="main-menu">
+            <li class="sub-header">
+              <span>Transaction</span>
+            </li>
+            <li class="active">
+              <a href="acv-dashboard.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-layout"></div>
+                </div>
+                <span>Dashboard</span>
+              </a> 
+            </li>
+
+            <li class="active">
+              <a href="acv-list.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-newspaper"></div>
+                </div>
+                <span>List Order</span>
+              </a> 
+            </li>
+
+            <li class="active">
+              <a href="acv-list-customer.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-user-male-circle"></div>
+                </div>
+                <span>List Customer</span>
+              </a> 
+            </li>
+
+            <li class="active">
+              <a href="acv-list-inquiry.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-layers"></div>
+                </div>
+                <span>Customer Inquiry</span>
+              </a> 
+            </li>
+
+            <li class="active">
+              <a href="acv-list-user.html">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-user"></div>
+                </div>
+                <span>List User</span>
+              </a> 
+            </li>
+            
+ 
+            </ul> 
+
+            <!--  Master
+            <ul class="main-menu">
+              <li class="sub-header">
+                <span>Master</span>
+              </li> 
+              <li class="active">
+                <a href="acv-list.html">
+                  <div class="icon-w">
+                    <div class="os-icon os-icon-user"></div>
+                  </div>
+                  <span>List Customer</span>
+                </a> 
+              </li> 
+              <li class="active">
+                <a href="acv-list.html">
+                  <div class="icon-w">
+                    <div class="os-icon os-icon-user-male-circle"></div>
+                  </div>
+                  <span>List User Admin</span>
+                </a> 
+              </li>    
+            </ul>   -->
+          </div>
+        <!--------------------
+        END - Main Menu
+        -------------------->
+        <div class="content-w">
+          <!--------------------
+          START - Top Bar
+          -------------------->
+          <div class="top-bar color-scheme-transparent">
+            <!--------------------
+            START - Top Menu Controls
+            -------------------->
+            <div class="top-menu-controls"> 
+              <!--------------------
+              START - Messages Link in secondary top menu
+              -------------------->
+              <div class="messages-notifications os-dropdown-trigger os-dropdown-position-left">
+                <i class="os-icon os-icon-mail-14"></i>
+                <div class="new-messages-count">
+                  12
+                </div>
+                <div class="os-dropdown light message-list">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="user-avatar-w">
+                          <img alt="" src="img/avatar1.jpg">
+                        </div>
+                        <div class="message-content">
+                          <h6 class="message-from">
+                            John Mayers
+                          </h6>
+                          <h6 class="message-title">
+                            Account Update
+                          </h6>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="user-avatar-w">
+                          <img alt="" src="img/avatar2.jpg">
+                        </div>
+                        <div class="message-content">
+                          <h6 class="message-from">
+                            Phil Jones
+                          </h6>
+                          <h6 class="message-title">
+                            Secutiry Updates
+                          </h6>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="user-avatar-w">
+                          <img alt="" src="img/avatar3.jpg">
+                        </div>
+                        <div class="message-content">
+                          <h6 class="message-from">
+                            Bekky Simpson
+                          </h6>
+                          <h6 class="message-title">
+                            Vacation Rentals
+                          </h6>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="user-avatar-w">
+                          <img alt="" src="img/avatar4.jpg">
+                        </div>
+                        <div class="message-content">
+                          <h6 class="message-from">
+                            Alice Priskon
+                          </h6>
+                          <h6 class="message-title">
+                            Payment Confirmation
+                          </h6>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div> 
+              <!--------------------
+              END - Settings Link in secondary top menu
+              --------------------><!--------------------
+              START - User avatar and menu in secondary top menu
+              -------------------->
+              <div class="logged-user-w">
+                <div class="logged-user-i">
+                  <div class="avatar-w">
+                    <img alt="" src="img/avatar1.jpg">
+                  </div>
+                  <div class="logged-user-menu color-style-bright">
+                    <div class="logged-user-avatar-info">
+                      <div class="avatar-w">
+                        <img alt="" src="img/avatar1.jpg">
+                      </div>
+                      <div class="logged-user-info-w">
+                        <div class="logged-user-name">
+                          Maria Gomez
+                        </div>
+                        <div class="logged-user-role">
+                          Administrator
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-icon">
+                      <i class="os-icon os-icon-wallet-loaded"></i>
+                    </div>
+                    <ul>  
+                      <li>
+                        <a href="acv-login.html"><i class="os-icon os-icon-signs-11"></i><span>Logout</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--------------------
+              END - User avatar and menu in secondary top menu
+              -------------------->
+            </div>
+            <!--------------------
+            END - Top Menu Controls
+            -------------------->
+          </div>
+          <!--------------------
+          END - Top Bar
+          -------------------->
+
+
+          <div class="content-i">
+            <div class="content-box">
+              <div class="element-wrapper">
+                <h6 class="element-header">
+                  List Order Inspection
+                </h6>
+
+                <div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="dataTable1_length"><label>Show <select name="dataTable1_length" aria-controls="dataTable1" class="form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-12 col-md-6 text-right"><div id="dataTable1_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable1"></label></div></div></div>
+                <div class="table-responsive">
+                        <table class="table table-padded">
+                          <thead>
+                            <tr>
+                              <th>
+                                Booking Date
+                              </th>
+                              <th>
+                                Order Date
+                              </th>
+                              <th class="text-center">
+                                Nama
+                              </th>
+                              <th class="text-center">
+                                Email
+                              </th>
+                              <th class="text-center">
+                                Nomor Hp
+                              </th>
+                               <th>
+                                Jenis inspeksi
+                              </th>
+                              <th>
+                                Alamat inspeksi
+                              </th>
+                              <th>
+                                Status
+                              </th>
+                              <th>
+                                Action
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <span>Today</span><span class="smaller lighter">1:52am</span>
+                              </td>
+                              <td>
+                                <span>01/01/2019</span><span class="smaller lighter">08:00am</span>
+                              </td>
+                              <td>
+                                <div class="user-with-avatar">
+                                  <span>Mike Bishop</span>
+                                </div>
+                              </td>
+                              <td>
+                                <span>mike.adam@gmail.com</span>
+                              </td>
+                              <td>
+                                <span>081908762896</span>
+                              </td>
+                              <td class="text-center">
+                                <span class="badge badge-success-inverted">Car only</span>
+                              </td>
+                              <td>
+                                <div class="smaller lighter">
+                                  Jl. Badak 1 blok b no 43 Perum Peruri Jakarta Barat
+                                </div>
+                              </td>
+                              
+                              <td class="nowrap">
+                                <span class="status-pill smaller green"></span><span>Inspected</span>
+                              </td>
+                              <td class="row-actions">
+                                <a href="#" data-target="#exampleModal1" data-toggle="modal" type="button"><i class="os-icon os-icon-grid-10"></i></a><a href="#" data-target="#exampleModal2" data-toggle="modal" type="button"><i class="os-icon os-icon-pencil-12"></i></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span>12/12/2019</span><span class="smaller lighter">1:52am</span>
+                              </td>
+                              <td>
+                                <span>01/01/2019</span><span class="smaller lighter">10:00am</span>
+                              </td>
+                              <td>
+                                <div class="user-with-avatar">
+                                  <span>Jhone Doe</span>
+                                </div>
+                              </td>
+                              <td>
+                                <span>jhone.doe@gmail.com</span>
+                              </td>
+                              <td>
+                                <span>081908762896</span>
+                              </td>
+                              <td class="text-center">
+                                <span class="badge badge-success-inverted">Car Document</span>
+                              </td>
+                              <td>
+                                <div class="smaller lighter">
+                                  Jl. Badak 1 blok b no 43 Perum Peruri Jakarta Barat
+                                </div>
+                              </td>
+                              
+                              <td class="nowrap">
+                                <span class="status-pill smaller red"></span><span>Cancel</span>
+                              </td>
+                              <td class="row-actions">
+                                <a href="#" data-target="#exampleModal1" data-toggle="modal" type="button"><i class="os-icon os-icon-grid-10"></i></a><a href="#" data-target="#exampleModal2" data-toggle="modal" type="button"><i class="os-icon os-icon-pencil-12"></i></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span>Today</span><span class="smaller lighter">1:52am</span>
+                              </td>
+                              <td>
+                                <span>01/01/2019</span><span class="smaller lighter">08:00am</span>
+                              </td>
+                              <td>
+                                <div class="user-with-avatar">
+                                  <span>Mike Bishop</span>
+                                </div>
+                              </td>
+                              <td>
+                                <span>mike.adam@gmail.com</span>
+                              </td>
+                              <td>
+                                <span>081908762896</span>
+                              </td>
+                              <td class="text-center">
+                                <span class="badge badge-success-inverted">Car only</span>
+                              </td>
+                              <td>
+                                <div class="smaller lighter">
+                                  Jl. Badak 1 blok b no 43 Perum Peruri Jakarta Barat
+                                </div>
+                              </td>
+                              
+                              <td class="nowrap">
+                                <span class="status-pill smaller green"></span><span>Inspected</span>
+                              </td>
+                              <td class="row-actions">
+                                <a href="#" data-target="#exampleModal1" data-toggle="modal" type="button"><i class="os-icon os-icon-grid-10"></i></a><a href="#" data-target="#exampleModal2" data-toggle="modal" type="button"><i class="os-icon os-icon-pencil-12"></i></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <span>12/12/2019</span><span class="smaller lighter">1:52am</span>
+                              </td>
+                              <td>
+                                <span>01/01/2019</span><span class="smaller lighter">10:00am</span>
+                              </td>
+                              <td>
+                                <div class="user-with-avatar">
+                                  <span>Jhone Doe</span>
+                                </div>
+                              </td>
+                              <td>
+                                <span>jhone.doe@gmail.com</span>
+                              </td>
+                              <td>
+                                <span>081908762896</span>
+                              </td>
+                              <td class="text-center">
+                                <span class="badge badge-success-inverted">Car Document</span>
+                              </td>
+                              <td>
+                                <div class="smaller lighter">
+                                  Jl. Badak 1 blok b no 43 Perum Peruri Jakarta Barat
+                                </div>
+                              </td>
+                              
+                              <td class="nowrap">
+                                <span class="status-pill smaller blue"></span><span>Cofirmed</span>
+                              </td>
+                              <td class="row-actions">
+                                <a href="#" data-target="#exampleModal1" data-toggle="modal" type="button"><i class="os-icon os-icon-grid-10"></i></a><a href="#" data-target="#exampleModal2" data-toggle="modal" type="button"><i class="os-icon os-icon-pencil-12"></i></a>
+                              </td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="dataTable1_info" role="status" aria-live="polite">Showing 1 to 10 of 13 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="dataTable1_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="dataTable1_previous"><a href="#" aria-controls="dataTable1" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="dataTable1" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="dataTable1" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item next" id="dataTable1_next"><a href="#" aria-controls="dataTable1" data-dt-idx="3" tabindex="0" class="page-link">Next</a></li></ul></div></div></div>
+
+
+              </div>
+            </div>
+            <div class="display-type"></div>
+          </div>
+
+          <!-- MODAL VIEW -->
+          <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal1" role="dialog" tabindex="-1">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Detail Information
+                    </h5>
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true"> &times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="table-responsive">
+                      <table class="table table-lightborder">
+                        <thead>
+                         <h6 class="element-header">Informasi Inspection</h6>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              Nomor Booking
+                            </td>
+                            <td class="text-left">
+                              <span class="value badge badge-pill badge-success">09011700012</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Jenis Inspeksi
+                            </td>
+                            <td class="text-left">
+                              Car Inspection
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Tanggal Inspeksi
+                            </td>
+                            <td class="text-left">
+                              21 Januari 2018
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                             Jam
+                            </td>
+                            <td class="text-left">
+                              18:00 wib
+                            </td>
+                          </tr>
+                           <tr>
+                            <td>
+                             Kota
+                            </td>
+                            <td class="text-left">
+                              <p>Jakarta</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                             Lokasi
+                            </td>
+                            <td class="text-left">
+                              <p>Jl. Badak 1 blok b no 43 Perum Peruri Jakarta Barat</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-lightborder">
+                        <thead>
+                         <h6 class="element-header">Informasi kendaraan</h6>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              Nopol
+                            </td>
+                            <td class="text-left">
+                              B 3214 GNJ
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Merek
+                            </td>
+                            <td class="text-left">
+                              Toyota
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                             Seri
+                            </td>
+                            <td class="text-left">
+                              Avanza
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                             Tipe
+                            </td>
+                            <td class="text-left">
+                             G
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Tahun
+                            </td>
+                            <td class="text-left">
+                              2018
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal" type="button"> Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <!-- MODAL VIEW -->
+          <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal2" role="dialog" tabindex="-1">
+              <div class="modal-dialog modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Detail Information
+                    </h5>
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true"> &times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                      <ul class="nav nav-tabs mb30" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">CONFIRMATION</a>
+                        </li>
+                         <li class="nav-item">
+                          <a class="nav-link" id="qualification-tab" data-toggle="tab" href="#qualification" role="tab" aria-controls="qualification" aria-selected="true">PAYMENT STATUS</a>
+                        </li>
+                         <li class="nav-item">
+                          <a class="nav-link" id="exprience-tab" data-toggle="tab" href="#exprience" role="tab" aria-controls="exprience" aria-selected="true">ASSIGN TO</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                          <div class="row">
+                            <div class="table-responsive col-6">
+                              <fieldset class="form-group">
+                                  <h6 class="element-header text-center">Informasi Inspeksi</h6>
+                                  <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label text-right" for="">Jenis Inspeksi</label>
+                                    <div class="col-sm-8">
+                                      <select class="form-control">
+                                        <option>
+                                          Car Only
+                                        </option>
+                                        <option>
+                                          Car and Document
+                                        </option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label text-right" for="">Tanggal Inspeksi</label>
+                                    <div class="col-sm-8">
+                                      <input class="form-control" placeholder="First Name" type="text" value="21 Januari 2018">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label text-right" for="">Jam</label>
+                                    <div class="col-sm-8">
+                                      <input class="form-control" placeholder="First Name" type="text" value="18:00 wib">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label text-right" for="">Kota</label>
+                                    <div class="col-sm-8">
+                                      <input class="form-control" placeholder="First Name" type="text" value="Jakarta Barat">
+                                    </div>
+                                  </div>
+                                   <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label text-right" for="">Alamat</label>
+                                    <div class="col-sm-8">
+                                      <textarea class="form-control" placeholder="First Name" type="text" value="">Jl. Badak 1 blok b no 43 Perum Peruri Jakarta Barat</textarea>
+                                    </div>
+                                  </div>
+                              </fieldset>
+                            </div>
+                            <div class="table-responsive  col-6">
+                              <fieldset class="form-group">
+                                  <h6 class="element-header text-center">Informasi Kendaraan</h6>
+                                  <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label text-right" for="">Nopol</label>
+                                    <div class="col-sm-8">
+                                      <input class="form-control" placeholder="First Name" type="text" value="B 321 JNF">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label text-right" for="">Merek</label>
+                                    <div class="col-sm-8">
+                                      <input class="form-control" placeholder="First Name" type="text" value="Toyota">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label text-right" for="">Seri</label>
+                                    <div class="col-sm-8">
+                                      <input class="form-control" placeholder="First Name" type="text" value="Avanza">
+                                    </div>
+                                  </div>
+                                  <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label text-right" for="">Tipe</label>
+                                    <div class="col-sm-8">
+                                      <input class="form-control" placeholder="First Name" type="text" value="G">
+                                    </div>
+                                  </div>
+                                   <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label text-right" for="">Tahun</label>
+                                    <div class="col-sm-8">
+                                      <input class="form-control" placeholder="First Name" type="text" value="2018">
+                                    </div>
+                                  </div>
+                              </fieldset>
+                            </div>
+                          </div>
+                          <div class="modal-footer text-center">
+                            <button class="btn btn-danger" data-dismiss="modal" type="button">Cancel Order</button>
+                            <button class="btn btn-success" type="button">Order Confirmation</button>
+                            <button class="btn btn-outline-primary" type="button"> Save changes</button>
+                          </div>
+                        </div>
+                        
+                        <div class="tab-pane fade mb30" id="qualification" role="tabpanel" aria-labelledby="qualification-tab">
+                          <div class="form-group row">
+                            <label class="col-sm-4 col-form-label text-right" for="">Jumlah Pembayaran</label>
+                            <div class="col-sm-6">
+                              <input class="form-control" placeholder="Rp" type="text" value="">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label class="col-sm-4 col-form-label text-right" for="">Transfer via Bank</label>
+                            <div class="col-sm-6">
+                              <input class="form-control" placeholder="Masukan Bank" type="text" value="">
+                            </div>
+                          </div>
+                          <div class="modal-footer text-center mt80">
+                            <button class="btn btn-danger" data-dismiss="modal" type="button">Cancel Order</button>
+                            <button class="btn btn-success" type="button">Payment Confirmation</button>
+                            <button class="btn btn-outline-primary" type="button"> Save changes</button>
+                          </div>
+                        </div>
+                        
+                        <div class="tab-pane fade" id="exprience" role="tabpanel" aria-labelledby="exprience-tab">
+                          <div class="form-group row">
+                            <label class="col-sm-4 col-form-label text-right" for="">Assign to Inspector</label>
+                            <div class="col-sm-6">
+                              <input class="form-control" placeholder="Inspector Name" type="text" value="">
+                            </div>
+                          </div>
+                          <div class="modal-footer text-center mt80">
+                            <button class="btn btn-success" type="button">Assign Now</button>
+                            <button class="btn btn-outline-primary" type="button"> Save changes</button>
+                          </div>
+                        </div>
+                        
+
+
+                      <!--<div class="table-responsive col-6">
+                        <fieldset class="form-group">
+                            <h6 class="element-header text-center">Informasi Inspeksi</h6>
+                            <div class="form-group row">
+                              <label class="col-sm-4 col-form-label text-right" for="">Jenis Inspeksi</label>
+                              <div class="col-sm-8">
+                                <input class="form-control" placeholder="First Name" type="text" value="Car Inspection ">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-sm-4 col-form-label text-right" for="">Tanggal Inspeksi</label>
+                              <div class="col-sm-8">
+                                <input class="form-control" placeholder="First Name" type="text" value="21 Januari 2018">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-sm-4 col-form-label text-right" for="">Jam</label>
+                              <div class="col-sm-8">
+                                <input class="form-control" placeholder="First Name" type="text" value="18:00 wib">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-sm-4 col-form-label text-right" for="">Kota</label>
+                              <div class="col-sm-8">
+                                <input class="form-control" placeholder="First Name" type="text" value="Jakarta Barat">
+                              </div>
+                            </div>
+                             <div class="form-group row">
+                              <label class="col-sm-4 col-form-label text-right" for="">Alamat</label>
+                              <div class="col-sm-8">
+                                <input class="form-control" placeholder="First Name" type="text" value="Jl. Badak 1 blok b no 43 Perum Peruri Jakarta Barat">
+                              </div>
+                            </div>
+                            
+                        </fieldset>
+                      </div>
+                      <div class="table-responsive  col-6">
+                        <fieldset class="form-group">
+                            <h6 class="element-header text-center">Informasi Kendaraan</h6>
+                            <div class="form-group row">
+                              <label class="col-sm-4 col-form-label text-right" for="">Nopol</label>
+                              <div class="col-sm-8">
+                                <input class="form-control" placeholder="First Name" type="text" value="B 321 JNF">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-sm-4 col-form-label text-right" for="">Merek</label>
+                              <div class="col-sm-8">
+                                <input class="form-control" placeholder="First Name" type="text" value="Toyota">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-sm-4 col-form-label text-right" for="">Seri</label>
+                              <div class="col-sm-8">
+                                <input class="form-control" placeholder="First Name" type="text" value="Avanza">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label class="col-sm-4 col-form-label text-right" for="">Tipe</label>
+                              <div class="col-sm-8">
+                                <input class="form-control" placeholder="First Name" type="text" value="G">
+                              </div>
+                            </div>
+                             <div class="form-group row">
+                              <label class="col-sm-4 col-form-label text-right" for="">Tahun</label>
+                              <div class="col-sm-8">
+                                <input class="form-control" placeholder="First Name" type="text" value="2018">
+                              </div>
+                            </div>
+                            
+                        </fieldset>
+                      </div>-->
+                  
+                  </div>
+                </div>
+              </div>
+            </div>  
+
+
+
+          <script src="bower_components/jquery/dist/jquery.min.js"></script>
+          <script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+          <script src="bower_components/moment/moment.js"></script>
+          <script src="bower_components/chart.js/dist/Chart.min.js"></script>
+          <script src="bower_components/select2/dist/js/select2.full.min.js"></script>
+          <script src="bower_components/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+          <script src="bower_components/ckeditor/ckeditor.js"></script>
+          <script src="bower_components/bootstrap-validator/dist/validator.min.js"></script>
+          <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+          <script src="bower_components/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+          <script src="bower_components/dropzone/dist/dropzone.js"></script>
+          <script src="bower_components/editable-table/mindmup-editabletable.js"></script>
+          <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+          <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+          <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+          <script src="bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+          <script src="bower_components/tether/dist/js/tether.min.js"></script>
+          <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+          <script src="bower_components/bootstrap/js/dist/util.js"></script>
+          <script src="bower_components/bootstrap/js/dist/alert.js"></script>
+          <script src="bower_components/bootstrap/js/dist/button.js"></script>
+          <script src="bower_components/bootstrap/js/dist/carousel.js"></script>
+          <script src="bower_components/bootstrap/js/dist/collapse.js"></script>
+          <script src="bower_components/bootstrap/js/dist/dropdown.js"></script>
+          <script src="bower_components/bootstrap/js/dist/modal.js"></script>
+          <script src="bower_components/bootstrap/js/dist/tab.js"></script>
+          <script src="bower_components/bootstrap/js/dist/tooltip.js"></script>
+          <script src="bower_components/bootstrap/js/dist/popover.js"></script>
+          <script src="js/dataTables.bootstrap4.min.js"></script>
+          <script src="js/demo_customizer.js?version=4.4.0"></script>
+          <script src="js/main.js?version=4.4.0"></script>
+
+        </body>
+        </html>

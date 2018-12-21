@@ -8,7 +8,6 @@
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
 /* Styles */
-	
 	.hamburger {display: none !important;}
 	
 }
@@ -110,7 +109,7 @@
 	.car-float {display: none !important;}
 	.caption-right {left: 10% !important}
 	.caption {bottom: 0; left: 20px;}
-	.document-info-bg {background-image: none;}
+	.document-info-bg {background-image:none;}
 	.advantage {background-image: none !important;}
 	.usp .number {text-align: center;font-size:26px;}
 	.usp img {margin-top: 30px;}
@@ -162,7 +161,7 @@
 	.service-box .icon-services {background-size: contain;width: 50px;}
 	.service-box p {font-size: 13px;}
 	.accordion-faq {padding: 0!important;}
-	.brand:before {content: "profile menu";position: absolute;color: #000000;right:40px top:5px;}
+	.brand:before {content: "profile menu";position: absolute;color:#000000;right:40px top:5px;}
 	.account-management .prof-info div {-webkit-column-count:1;-moz-column-count: 1;column-count: 1;}
 	.overlay {padding: 30px 0;}
 	.document-info-bg {background-image: none;}
@@ -179,5 +178,4 @@
 	.ic-facebook, .ic-twitter, .ic-google, .ic-linkedin {padding-left: 25px !important;}
 	footer .copy {text-align: center !important; font-size: 9px !important;}
 	footer ul {display: block;text-align: center;width: 100% !important;}
-
  }
