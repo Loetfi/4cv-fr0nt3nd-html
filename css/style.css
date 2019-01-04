@@ -1005,7 +1005,7 @@ nav {
   display: inline-block; }
 
 .ic-car {
-  background-image: url(../img/icon/ic-car-w.png);
+  background-image: url(../img/icon/IC-Car-white.svg);
   background-repeat: no-repeat;
   width: 78px;
   height: 76px;
@@ -1013,7 +1013,7 @@ nav {
   text-indent: -100%; }
 
 .ic-doc {
-  background-image: url(../img/icon/ic-doc-w.png);
+  background-image: url(../img/icon/IC-Doc-white.svg);
   background-repeat: no-repeat;
   width: 78px;
   height: 90px;
@@ -1037,9 +1037,9 @@ nav {
     -moz-box-shadow: 0px 0px 69px -6px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 0px 69px -6px rgba(0, 0, 0, 0.4); }
     .service-box:hover .ic-doc {
-      background-image: url(../img/icon/ic-doc-c.png); }
+      background-image: url(../img/icon/IC-Doc-color.svg); }
     .service-box:hover .ic-car {
-      background-image: url(../img/icon/ic-car-c.png); }
+      background-image: url(../img/icon/IC-Car-color.svg); }
     .service-box:hover p {
       color: #9e57a1 !important; }
 
@@ -1284,7 +1284,8 @@ nav {
   .usp h2 {
     margin-bottom: 40px; }
   .usp img {
-    margin-bottom: 10px; }
+    margin: 10px auto;
+    max-height: 80px; }
   .usp .number {
     font-size: 34px;
     font-family: "OpenSans-Bold-webfont", Helvetica, San serif;
@@ -2533,11 +2534,12 @@ footer {
         .nav-login ul.dropdown-menu li a:hover {
           background-color: #fdfafd; }
       .nav-login ul.dropdown-menu li:first-child a:before {
-        content: url(../img/icon/ic-profile2.png);
+        content: url(../img/icon/profile-settings-color.svg);
+        width: 20px;
         display: inline-block;
         position: absolute;
         left: 10px;
-        top: 7px; }
+        top: 10px; }
       .nav-login ul.dropdown-menu li:last-child a:before {
         content: url(../img/icon/ic-logout2.png);
         display: inline-block;
@@ -3382,16 +3384,17 @@ ul.timeline > li:before {
   background-color: #9d4ba1;
   color: #ffffff; }
 
+/*
 .nav-tabset > li:after {
-  content: " ";
-  position: absolute;
-  opacity: 0;
-  margin: 0 auto;
-  bottom: 0px;
-  border: 10px solid transparent;
-  border-bottom-color: #9d4ba1;
-  transition: left 1s; }
-
+    content: " ";
+    position: absolute;
+    opacity: 0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 10px solid transparent;
+    border-bottom-color:$purple-dark;
+    transition: left 1s;
+} */
 .nav-tabset > li.active:after {
   left: calc(50% - 10px);
   opacity: 1; }
@@ -3508,5 +3511,81 @@ ul.timeline > li:before {
       font-size: 13px; }
     .wizard .form-group textarea {
       box-shadow: none; }
+
+.span_pseudo, .chiller_cb span:before, .chiller_cb span:after {
+  content: "";
+  display: inline-block;
+  background: #fff;
+  width: 0;
+  height: 0.2rem;
+  position: absolute;
+  transform-origin: 0% 0%; }
+
+.chiller_cb {
+  position: relative;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 20px; }
+
+.chiller_cb input {
+  display: none; }
+
+.chiller_cb input:checked ~ span {
+  background: #9d4ba1;
+  border-color: #9d4ba1; }
+
+.chiller_cb input:checked ~ span:before {
+  width: 1rem;
+  height: 0.15rem;
+  transition: width 0.1s;
+  transition-delay: 0.3s; }
+
+.chiller_cb input:checked ~ span:after {
+  width: 0.4rem;
+  height: 0.15rem;
+  transition: width 0.1s;
+  transition-delay: 0.2s; }
+
+.chiller_cb input:disabled ~ span {
+  background: #ececec;
+  border-color: #dcdcdc; }
+
+.chiller_cb input:disabled ~ label {
+  color: #dcdcdc; }
+
+.chiller_cb input:disabled ~ label:hover {
+  cursor: default; }
+
+.chiller_cb label {
+  padding-left: 2rem;
+  font-size: 1.3rem;
+  border-radius: 3px;
+  position: relative;
+  font-family: "open_sanslight", Helvetica, San serif;
+  z-index: 2;
+  cursor: pointer;
+  margin-bottom: 0; }
+
+.chiller_cb span {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 2px solid #ccc;
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+  z-index: 1;
+  box-sizing: content-box; }
+
+.chiller_cb span:before {
+  transform: rotate(-55deg);
+  top: 1rem;
+  left: 0.37rem; }
+
+.chiller_cb span:after {
+  transform: rotate(35deg);
+  bottom: 0.35rem;
+  left: 0.2rem; }
 
 /*# sourceMappingURL=style.css.map */
