@@ -45,7 +45,9 @@
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 </head>
-<body><div class="preloader"></div>
+<body>
+  <div class="preloader"></div>
+  <div class="notify"><span class="warning">hi, selamat datang <strong>iqdam fauzi</strong></span></div>
 
 <!-- MOBILE MENU -->
 <div class="fat-nav mobile-menu">
@@ -57,7 +59,7 @@
       <li><a href="faq.html">faq</a></li>
       <li><a href="contact-us.html">contact us</a></li>
       <li class="mt10"><span><a class="ctc" href="tel:0318711818"> 031-879 9999</a></span></li>
-      <li><a href="#">Masuk</a></li>
+      <li><a class="hover-cursor" data-toggle="modal" data-target="#ModalLogin">Masuk</a></li>
       <li><a data-toggle="modal" data-target="#ModalRegistration">Daftar</a></li>
     </ul>
   </div>
@@ -650,8 +652,8 @@
                       <fieldset>  
                         <div class="form-group"> 
                             <div class="login-socialmedia register-socialmedia">
-                              <a href="javascript:void(0);" class="login-facebook"><span class="ic ic-facebook"></span>Masuk via Facebook</a>
-                              <a href="//ibid.astra.co.id/omni/twitter/twitter" class="login-twitter"><span class="ic ic-twitter"></span>Masuk via Twitter</a>
+                              <!-- <a href="javascript:void(0);" class="login-facebook"><span class="ic ic-facebook"></span>Masuk via Facebook</a>
+                              <a href="//ibid.astra.co.id/omni/twitter/twitter" class="login-twitter"><span class="ic ic-twitter"></span>Masuk via Twitter</a> -->
                               <a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fibid.astra.co.id%2Findex.php%2Fomni%2Fgoogle%2Fcallback&amp;client_id=874687288066-f2n0vhd3kjp1m2cg66epemtgbpm7c8p2.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&amp;access_type=online&amp;approval_prompt=auto" class="login-google"><span class="ic ic-google"></span>Masuk via Google</a>
                              <!--  <a href="//ibid.astra.co.id/omni/linkedin/linkedin/" class="login-linkedin"><span class="ic ic-linkedin"></span>Daftar via Linkedin</a> -->
                           </div>
@@ -706,6 +708,13 @@
       <script type="text/javascript">
         $(window).load(function() {
           $(".preloader").delay(1000).fadeOut("slow");
+        })
+      </script>
+
+      <!-- splash screen while page loading -->
+      <script type="text/javascript">
+        $(window).load(function() {
+          $(".notify").delay(1000).fadeOut("slow");
         })
       </script>
 
