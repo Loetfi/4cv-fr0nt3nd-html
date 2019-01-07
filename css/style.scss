@@ -4222,4 +4222,79 @@ ul.timeline > li:before {
   left: 0.2rem;
 }
 
+svg {
+  width: 100px;
+  display: block;
+  margin: 40px auto 0;
+}
+
+.path {
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 0;
+  &.circle {
+    -webkit-animation: dash 2.5s ease-in-out;
+    animation: dash 2.5s ease-in-out;
+  }
+  &.line {
+    stroke-dashoffset: 10000;
+    -webkit-animation: dash 2s .35s ease-in-out forwards;
+    animation: dash 2.5s .35s ease-in-out forwards;
+  }
+  &.check {
+    stroke-dashoffset: -100;
+    -webkit-animation: dash-check 2.5s .35s ease-in-out forwards;
+    animation: dash-check 2.5s .35s ease-in-out forwards;
+  }
+}
+
+p {
+  text-align: center;
+  margin: 20px 0 60px;
+  font-size: 1.25em;
+  &.success {
+    color: #73AF55;
+  }
+  &.error {
+    color: #D06079;
+  }
+}
+
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dashoffset: 900;
+  }
+}
+
+@keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dashoffset: 900;
+  }
+}
+
+
 

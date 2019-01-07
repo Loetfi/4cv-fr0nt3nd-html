@@ -130,6 +130,12 @@
 	.section-registration h3 {font-size: 16px;}
 	.login-socialmedia a {font-size: 15px;width: 90%;margin: 0 auto 20px;height: 40px !important;padding:7px 14px;}
 	.ic-facebook, .ic-twitter, .ic-google, .ic-linkedin {padding-left: 25px !important;}
+
+	.forgot-password img{display: none;}
+	.forgot-password h2,.forgot-password p {margin: 0 -15px}
+	.forgot-password .col-md-12 {margin: 0 -20px}
+	.wizard img {display: none;}
+
 	footer .copy {text-align: center !important; font-size: 9px !important;}
 	footer ul {display: block;text-align: center;width: 100% !important;}
 }
