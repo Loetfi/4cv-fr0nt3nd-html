@@ -135,6 +135,9 @@
 	.forgot-password h2,.forgot-password p {margin: 0 -15px}
 	.forgot-password .col-md-12 {margin: 0 -20px}
 	.wizard img {display: none;}
+	.resume-booking h2 {font-size: 20px;margin-top: 0;}
+	.detail-resume {padding: 20px 0 !important}
+	.detail-resume h4 {font-size: 10px;}
 
 	footer .copy {text-align: center !important; font-size: 9px !important;}
 	footer ul {display: block;text-align: center;width: 100% !important;}
