@@ -55,7 +55,7 @@
       <li><a href="booking-inspection-page1.html">Booking inspection</a></li>
       <li><a href="faq.html">faq</a></li>
       <li><a href="contact-us.html">contact us</a></li>
-      <li class="mt10"><span><a class="ctc" href="tel:0318711818"> 031-879 9999</a></span></li>
+      <li class="mt10"><span><a class="ctc" href="tel:0318711818"> 021-7355269</a></span></li>
       <li><a href="#">Jhone</a></li>
     </ul>
   </div>
@@ -70,7 +70,7 @@
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right main-menu">
           <li class="ctc"><span><a href="tel:0318711818"> 031-879 9999</a></span></li>
               <!--<li class="smd"><a href="#" title=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
               <li class="smd"><a href="#" title=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
@@ -132,12 +132,12 @@
                         <div class="p25 bg-grey-dark">
                           <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control">
+                                <input id="dateBook" type="text" class="form-control">
                             </div>
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control">
+                                <input id="dateBook" type="text" class="form-control">
                             </div>
                           </div>
                         </div>
@@ -386,6 +386,34 @@
         </div>
        </div>
 
+
+    <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              <form id="cities-form" action="#" method="post">
+                  <input name="city" type="checkbox" value="beijing"> Beijing<br>
+                  <input name="city" type="checkbox" value="shanghai"> Shanghai 
+             </form>
+            </div>
+            <div class="modal-footer">
+               <span class="error"></span>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button id="submit" type="button" class="btn btn-primary">Submit Cities</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+
       <div class="col-md-4">
         <div class="resume mt100">
           <div class="tab-content bg-white resume-box p25">
@@ -459,6 +487,30 @@
 
           <script>
             new WOW().init();
+          </script>
+          <script>
+            $('#dateBook').focus(function(){
+              //open bootsrap modal
+              $('#myModal').modal({
+                 show: true
+              });
+          });
+
+          $('#submit').click(function(){
+              var cities = [],
+                  input = $('#cities-form').serializeArray();
+              for (i=0; i< input.length; i++) {
+                  cities.push(input[i].value);
+              }
+              
+              if (cities.length === 0) {
+                  $('.error').text('please select a city...stupid');
+              } else {
+                  $('.error').text('');
+                var data = JSON.stringify(cities);
+                console.log(data);
+              }
+          });
           </script>
 
           <script>

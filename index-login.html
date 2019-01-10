@@ -45,6 +45,12 @@
 
 </head>
 <body><div class="preloader"></div>
+  <div id="notifAcv" class="notify">
+    <span class="warning slide-bottom">hi, selamat datang <strong>Jhone Doe</strong>
+      <button id="notifButton" class="btn"><i class="fa fa-close"></i></button>
+    </span>
+  </div>
+
 
 <!-- MOBILE MENU -->
 <div class="fat-nav mobile-menu">
@@ -55,7 +61,7 @@
       <li><a href="booking-inspection-page1.html">Booking inspection</a></li>
       <li><a href="faq.html">faq</a></li>
       <li><a href="contact-us.html">contact us</a></li>
-      <li class="mt10"><span><a class="ctc" href="tel:0318711818"> 031-879 9999</a></span></li>
+      <li class="mt10"><span><a class="ctc" href="tel:0318711818"> 021-7355269</a></span></li>
       <li><a href="#">Jhone</a></li>
     </ul>
   </div>
@@ -66,11 +72,11 @@
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+        <a class="navbar-brand" href="index.html"><img src="img/icon/logo.svg"></a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right main-menu">
           <li><a href="about-us.html">about us</a></li>
           <li><a href="our-services.html">our product</a></li>
           <li><a href="booking-inspection-page1.html">Booking inspection</a></li>
@@ -228,35 +234,35 @@
             </div>
           </div>
       </section>
-        <section class="usp">
+         <section class="usp">
           <div class="container">
             <div class="row text-center mb40">
               <h2 class="tittle-head tittle-pattern tal-c">how <span>it works</span></h2>
             </div>
             <div class="row clearfix">
               <div class="col-md-3">
-                <div class="col-md-12 tal-c"><img src="img/icon/usp-doc.png"></div>
+                <div class="col-md-12 tal-c"><img src="img/icon/usp-doc.svg" class="img-responsive"></div>
                 <div class="col-md-11 col-md-offset-1 mb40">
                   <div class="col-md-4 col-sm-4 col-xs-4 no-gutter number">01</div>
                   <div class="col-md-8 col-sm-8 col-xs-8 no-gutter text">Isi data pribadi dan data kendaraan</div>
                 </div>
               </div>
               <div class="col-md-3 mb30">
-                <div class="col-md-12 tal-c"><img src="img/icon/usp-call.png"></div>
+                <div class="col-md-12 tal-c"><img src="img/icon/usp-call.svg"></div>
                 <div class="col-md-11 col-md-offset-1">
                   <div class="col-md-4 col-sm-4 col-xs-4 no-gutter number">02</div>
                   <div class="col-md-8 col-sm-8 col-xs-8 no-gutter text">Buat jadwal inspeksi dengan Customer Care</div>
                 </div>
               </div>
               <div class="col-md-3 mb30">
-                <div class="col-md-12 tal-c"><img src="img/icon/usp-inspector.png"></div>
+                <div class="col-md-12 tal-c"><img src="img/icon/usp-inspector.svg"></div>
                 <div class="col-md-11 col-md-offset-1">
                   <div class="col-md-4 col-sm-4 col-xs-4 no-gutter number">03</div>
                   <div class="col-md-8 col-sm-8 col-xs-8 no-gutter text">Inspector Ahli kami  datang sesuai waktu dan lokasi</div>
                 </div>
               </div>
               <div class="col-md-3 mb30">
-                <div class="col-md-12 tal-c"><img src="img/icon/usp-report.png"></div>
+                <div class="col-md-12 tal-c"><img src="img/icon/usp-report.svg"></div>
                 <div class="col-md-11 col-md-offset-1">
                   <div class="col-md-4 col-sm-4 col-xs-4 no-gutter number">04</div>
                   <div class="col-md-8 col-sm-8 col-xs-8 no-gutter text">Dapatkan laporan inspeksi secara online</div>
@@ -680,6 +686,13 @@
       <script src="js/bootstrap.min.js"></script>
       <script src="js/parallax.js" type="text/javascript"></script>
       <script src="js/wow.js"></script>
+       <!-- ACV notifikasi -->
+      <script>
+        $(window).load(function() {
+          $("#notifAcv").delay(1000).fadeIn(100);
+          $("#notifAcv").delay(4500).fadeOut(100);
+        })
+      </script>
 
 
       <script>

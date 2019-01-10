@@ -55,7 +55,7 @@
       <li><a href="#">Booking inspection</a></li>
       <li><a href="faq.html">faq</a></li>
       <li><a href="contact-us.html">contact us</a></li>
-      <li class="mt10"><span><a class="ctc" href="tel:0318711818"> 031-879 9999</a></span></li>
+      <li class="mt10"><span><a class="ctc" href="tel:0318711818"> 021-7355269</a></span></li>
       <li><a href="#">Masuk</a></li>
        <li><a data-toggle="modal" data-target="#ModalRegistration">Daftar</a></li>
     </ul>
@@ -91,26 +91,34 @@
    </div>
    <!-- /.container -->
 </nav>
-    <div class="row mt120">
+    <div class="row mt80">
       <div class="container">
         <div class="col-md-8">
-          <div class="tabbing">
-            <!-- Nav tabs -->
-            <ul role="tablist">
-              <li role="presentation" class="active">
-                <a href="#dateIns" aria-controls="dateins" role="tab" data-toggle="tab">icon</a>
-                <span>Tanggal & Lokasi</span>
-              </li>
-              <li role="presentation">
-                <a href="#objekIns" aria-controls="objekIns" role="tab" data-toggle="tab">icon</a>
-                <span>Objek Inspeksi</span>
-              </li>
-              <li role="presentation">
-                <a href="#VerifikasiIns" aria-controls="VerifikasiIns" role="tab" data-toggle="tab">Verifikasi</a>
-                <span>Verifikasi</span>
-              </li>
-            </ul>
-          </div>
+          <div class="tabbing-process">
+             <div class="row bs-wizard" style="border-bottom:0;"> 
+              <div class="col-xs-4 bs-wizard-step complete">
+                <div class="text-center bs-wizard-stepnum">Tanggal & Lokasi</div>
+                <div class="progress"><div class="progress-bar"></div></div>
+                <a href="#" class="bs-wizard-dot"></a>
+                <div class="bs-wizard-info text-center"></div>
+              </div>
+              
+              <div class="col-xs-4 bs-wizard-step active"><!-- complete -->
+                <div class="text-center bs-wizard-stepnum">Detail Inspeksi</div>
+                <div class="progress"><div class="progress-bar"></div></div>
+                <a href="#" class="bs-wizard-dot"></a>
+                <div class="bs-wizard-info text-center"></div>
+              </div>
+              
+              <div class="col-xs-4 bs-wizard-step disabled"><!-- complete -->
+                <div class="text-center bs-wizard-stepnum">Verifikasi</div>
+                <div class="progress"><div class="progress-bar"></div></div>
+                <a href="#" class="bs-wizard-dot"></a>
+                <div class="bs-wizard-info text-center"></div>
+              </div>
+              
+        </div>
+      </div>  
           <!-- Tab panes -->
           <div class="tab-content bg-white mt10">
             <div role="tabpanel" class="tab-pane active" id="dateIns">
