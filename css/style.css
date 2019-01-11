@@ -644,7 +644,8 @@ a:visited {
   border: 1px solid #0053fc;
   border-radius: 3 !important; }
   .btn-info-order:hover {
-    background-color: transparent; }
+    color: #ffffff;
+    opacity: .7; }
 
 .btn-green {
   font-family: "open_sansregular", Helvetica, San serif;
@@ -874,7 +875,7 @@ nav {
   color: #6d3370; }
 
 .navbar-brand {
-  padding: 10px 0;
+  padding: 10px;
   z-index: 1; }
 
 .large li {
@@ -1923,7 +1924,8 @@ nav {
   margin: 15px 0; }
 
 .frb {
-  padding: 20px; }
+  padding: 20px;
+  position: relative; }
   .frb .ico-c {
     opacity: 0.7; }
     .frb .ico-c img {
@@ -1997,6 +1999,23 @@ nav {
 border-color: #02cc79;
 content: url("../img/icon/round-check.png") !important;
 } */
+.frb .info-show {
+  font-size: 11px;
+  display: none;
+  color: #606060;
+  background-color: #fdfdde;
+  border: 1px solid #e9eab3;
+  padding: 3px 10px;
+  top: 0;
+  position: relative;
+  bottom: 30px;
+  margin-left: 0;
+  border-radius: 4px; }
+
+.frb input[type="radio"]:checked ~ .info-show,
+.frb input[type="checkbox"]:checked ~ .info-show {
+  display: block; }
+
 .frb input[type="radio"]:checked ~ label,
 .frb input[type="checkbox"]:checked ~ label {
   color: #02cc79; }
@@ -3632,6 +3651,9 @@ ul.timeline > li:before {
     border-radius: 2px;
     color: #9e005d; }
 
+.resume {
+  margin-top: 100px; }
+
 .resume-box .summary-lst {
   margin-top: 20px;
   padding-left: 35px; }
@@ -3664,7 +3686,7 @@ ul.timeline > li:before {
     font-weight: 900; }
 
 .wizard {
-  padding-bottom: 130px;
+  padding-bottom: 40px;
   display: inline-block; }
   .wizard .form-group {
     display: inline-block;
@@ -3792,7 +3814,7 @@ ul.timeline > li:before {
   100% {
     stroke-dashoffset: 900; } }
 .bs-wizard {
-  margin-top: 40px; }
+  margin-top: 20px; }
 
 /*Form Wizard*/
 .bs-wizard {
@@ -3805,8 +3827,7 @@ ul.timeline > li:before {
 
 .bs-wizard > .bs-wizard-step .bs-wizard-stepnum {
   color: #c7c7c7;
-  font-size: 13px;
-  margin-bottom: 5px; }
+  font-size: 13px; }
 
 .bs-wizard > .bs-wizard-step .bs-wizard-info {
   color: #999;
@@ -3879,5 +3900,38 @@ ul.timeline > li:before {
 
 .bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot {
   pointer-events: none; }
+
+.dateInspection h4 {
+  text-align: center;
+  font-family: "NeoSans-bold", Helvetica, San serif;
+  color: #9e57a1;
+  size: 16px;
+  margin: 0 0 20px; }
+.dateInspection .clockIns ul {
+  padding: 0;
+  display: inline-block;
+  width: 100%; }
+  .dateInspection .clockIns ul li {
+    list-style: none;
+    margin: 7px;
+    width: 40%;
+    box-sizing: border-box;
+    float: left;
+    display: inline-block; }
+    .dateInspection .clockIns ul li button {
+      box-sizing: border-box;
+      background-color: transparent;
+      color: #0053fc;
+      border: 1px solid #0053fc;
+      width: 100%;
+      padding: 10px 20px;
+      border-radius: 5px;
+      size: 24px; }
+      .dateInspection .clockIns ul li button:hover {
+        background-color: #0053fc;
+        color: #ffffff; }
+      .dateInspection .clockIns ul li button:visited {
+        background-color: #0053fc;
+        color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

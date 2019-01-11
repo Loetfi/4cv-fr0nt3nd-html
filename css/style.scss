@@ -607,7 +607,8 @@ text-transform: uppercase;
   border:1px solid #0053fc;
   border-radius:3 !important;
   &:hover {
-    background-color:transparent;
+    color:#ffffff;
+   opacity:.7;
   }
 }
 
@@ -883,7 +884,7 @@ li {
 color:#6d3370;}
 
 .navbar-brand{
-  padding: 10px 0;
+  padding: 10px;
   z-index: 1;
 }
 
@@ -2138,6 +2139,7 @@ width: 1005;
       }
       .frb {
         padding: 20px;
+        position: relative;
         .ico-c {opacity: 0.7;
           img {
             margin: 20px auto;
@@ -2227,6 +2229,23 @@ content: url("../img/icon/round-check.png");
 border-color: #02cc79;
 content: url("../img/icon/round-check.png") !important;
 } */
+
+.frb .info-show {font-size: 11px;
+                display: none;
+                color : #606060;
+                background-color: #fdfdde;
+                border: 1px solid #e9eab3;padding: 3px 10px;
+                top:0;
+                position:relative;
+                bottom: 30px;
+                margin-left: 0;
+                border-radius: 4px;}
+
+.frb input[type="radio"]:checked ~ .info-show,
+.frb input[type="checkbox"]:checked ~ .info-show {
+          display: block;
+}
+
 
 .frb input[type="radio"]:checked ~ label,
 .frb input[type="checkbox"]:checked ~ label {
@@ -4196,6 +4215,10 @@ ul.timeline > li:before {
   }
 }
 
+.resume {
+  margin-top: 100px;
+}
+
 .resume-box {
   .summary-lst {
     margin-top: 20px;
@@ -4244,7 +4267,7 @@ ul.timeline > li:before {
 }
 
 .wizard {
-  padding-bottom: 130px;
+  padding-bottom: 40px;
   display: inline-block;
   .form-group {
     display: inline-block;
@@ -4407,13 +4430,13 @@ svg {
 
 
 
-.bs-wizard {margin-top: 40px;}
+.bs-wizard {margin-top:20px;}
 
 /*Form Wizard*/
 .bs-wizard {border-bottom: solid 1px #e0e0e0; padding: 0 0 10px 0;}
 .bs-wizard > .bs-wizard-step {padding: 0; position: relative;}
 .bs-wizard > .bs-wizard-step + .bs-wizard-step {}
-.bs-wizard > .bs-wizard-step .bs-wizard-stepnum {color: #c7c7c7; font-size: 13px; margin-bottom: 5px;}
+.bs-wizard > .bs-wizard-step .bs-wizard-stepnum {color: #c7c7c7; font-size: 13px;}
 .bs-wizard > .bs-wizard-step .bs-wizard-info {color: #999; font-size: 14px;}
 .bs-wizard > .bs-wizard-step > .bs-wizard-dot {position: absolute; width: 30px; height: 30px; display: block; background: #f2d2f4; top: 45px; left: 50%; margin-top: -15px; margin-left: -15px; border-radius: 50%;} 
 .bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {content: ' '; width: 20px; height: 20px; background: #9d4ba1; border-radius: 50px; position: absolute; top: 5px; left: 5px; } 
@@ -4430,3 +4453,50 @@ svg {
 .bs-wizard > .bs-wizard-step:first-child  > .progress {left: 50%; width: 50%;}
 .bs-wizard > .bs-wizard-step:last-child  > .progress {width: 50%;}
 .bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot{ pointer-events: none; }
+
+
+.dateInspection {
+  h4 {
+    text-align: center;
+    font-family: $font-tittle-bold;
+    color: $purple-light;
+    size: 16px;
+    margin:0 0 20px;
+  }
+  .dateIns {
+
+  }
+  .clockIns {
+    ul {
+      padding: 0;
+      display: inline-block;
+      width: 100%;
+      li {
+        list-style: none;
+        margin:7px;
+        width:40%;
+        box-sizing: border-box;
+        float: left;
+        display: inline-block;
+        button {
+          box-sizing: border-box;
+          background-color: transparent;
+          color :#0053fc;
+          border:1px solid #0053fc;
+          width: 100%;
+          padding: 10px 20px;
+          border-radius: 5px;
+          size: 24px;
+          &:hover {
+            background-color:#0053fc;
+            color: #ffffff;
+          }
+          &:visited {
+            background-color:#0053fc;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

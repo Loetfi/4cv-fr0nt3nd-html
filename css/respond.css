@@ -178,6 +178,7 @@
 	.brand:before {content: "profile menu";position: absolute;color:#000000;right:40px top:5px;}
 	.account-management .prof-info div {-webkit-column-count:1;-moz-column-count: 1;column-count: 1;}
 	.overlay {padding: 30px 0;}
+	.modal-booking .modal-body {padding:10px;}
 	.document-info-bg {background-image: none;}
 	.cta-footer span {text-align: center;}
 	.cta-footer h2 {font-size: 16px;}
