@@ -1193,6 +1193,11 @@ nav {
     border-radius: 0;
     overflow: hidden; }
 
+.modal-term .modal-header h3 {
+  font-family: "NeoSans-bold", Helvetica, San serif; }
+.modal-term ol {
+  padding-left: 20px; }
+
 .registration-popup-usp {
   background-image: url("../img/popup-usp.jpg");
   height: 100%;
@@ -3631,17 +3636,19 @@ ul.timeline > li:before {
   border-color: #ddd;
   color: #aaa; }
 
-.otp-verifikasi h2 {
-  font-family: "NeoSans-bold", Helvetica, San serif;
-  font-size: 22px; }
-.otp-verifikasi small {
-  color: #5d9d05;
-  display: block; }
-.otp-verifikasi p {
-  margin-bottom: 20px; }
-.otp-verifikasi button {
-  margin: 20px;
-  float: right; }
+.otp-verifikasi {
+  width: 100%; }
+  .otp-verifikasi h2 {
+    font-family: "NeoSans-bold", Helvetica, San serif;
+    font-size: 22px; }
+  .otp-verifikasi small {
+    color: #5d9d05;
+    display: block; }
+  .otp-verifikasi p {
+    margin-bottom: 20px; }
+  .otp-verifikasi button {
+    margin: 20px;
+    float: right; }
 
 .booking-page {
   margin-top: 90px; }
@@ -3933,5 +3940,59 @@ ul.timeline > li:before {
       .dateInspection .clockIns ul li button:visited {
         background-color: #0053fc;
         color: #ffffff; }
+
+.vcode-input {
+  width: 50px;
+  padding: 5px;
+  height: 70px !important;
+  text-align: center;
+  font-size: 34px;
+  color: #333;
+  border-radius: 5px;
+  border: 0;
+  margin-right: 15px; }
+
+.vcode-input:last-child {
+  margin-right: 0; }
+
+.verification-otp {
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden; }
+
+.verification-otp .btn {
+  width: 250px; }
+
+.input-code {
+  background: #903e98;
+  padding: 40px 20px; }
+
+.input-code h2 {
+  font-family: "OpenSansRegular", Helvetica, Sans-serif;
+  font-size: 20px;
+  color: #fff;
+  margin: 0 0 60px; }
+
+.input-code h3 {
+  font-family: "OpenSansRegular", Helvetica, Sans-serif;
+  font-size: 18px;
+  margin: 0 0 20px;
+  color: #fff; }
+
+.input-code p {
+  font-family: "OpenSansRegular", Helvetica, Sans-serif;
+  margin: 30px 0 0;
+  color: #fff; }
+
+.verification-otp button {
+  padding: 10px;
+  margin: 30px 0; }
+
+.verification-otp a {
+  color: #777;
+  text-decoration: underline;
+  margin-bottom: 40px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -135,12 +135,17 @@
                   </div>
                   <div class="col-md-7">
                     <h2>Verifikasi nomor Handphone (OTP)</h2>
-                    <p>Masukan Nomor Handphone kamu</p>
+                    <p>Masukan Kode yang kamu terima via Handphone kamu</p>
                     <div class="form-group">
-                      <input type="text" class="form-control">
+                      <div class="vcode" id="vcode">
+                        <input type="phone" class="vcode-input" maxlength="1" id="vcode1">
+                        <input type="phone" class="vcode-input" maxlength="1">
+                        <input type="phone" class="vcode-input" maxlength="1">
+                        <input type="phone" class="vcode-input" maxlength="1">
+                        <input type="phone" class="vcode-input" maxlength="1">
+                      </div>
                     </div>
-                    <small>Pastikan nomor Handphone yang anda masukan benar dan active
-                    untuk menerima kode OTP</small>
+                    <small>Tidak terima OTP? <a href="#"><strong>Kirim Ulang kode OTP</strong></a></small>
                     <button class="btn btn-green f-bd">kirim</button>
                   </div>
                 </div>
@@ -256,22 +261,22 @@
   </div>
 
   <!-- Dragable Testimonial Section -->
-  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-  <script type="text/javascript" src="js/jquery.datetimepicker.min.js"></script>
+  <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/parallax.js" type="text/javascript"></script>
+  <script src="js/wow.js"></script>
   <script src="js/jquery.fatNav.js"></script>
-
-  <script src="js/jquery-1.11.1.min.js"></script>
-  <script src="js/jquery.datetimepicker.min.js"></script>
-
-   <script>
-        (function() {
-            $.fatNav();
-        }());
-      </script> 
+  
+  
+  <script>
+    (function() {
+      $.fatNav();
+    }());
+  </script> 
 
   <script type="text/javascript">
     $(document).ready(function(){

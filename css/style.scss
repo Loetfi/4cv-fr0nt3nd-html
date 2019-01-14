@@ -1265,6 +1265,17 @@ width: 1005;
   }
 
 
+.modal-term {
+  .modal-header {
+    h3 {
+      font-family: $font-tittle-bold;
+    }
+  }
+  ol {
+    padding-left: 20px;
+  }
+}
+
 .registration-popup-usp {
   background-image: url("../img/popup-usp.jpg");
   height: 100%;
@@ -4187,7 +4198,7 @@ ul.timeline > li:before {
 
 
 .otp-verifikasi {
-
+  width: 100%;
   h2 {
     font-family: $font-tittle-bold;
     font-size: 22px;
@@ -4499,4 +4510,69 @@ svg {
       }
     }
   }
+}
+
+
+.vcode-input {
+    width: 50px;
+    padding: 5px;
+    height: 70px !important;
+    text-align: center;
+    font-size: 34px;
+    color: #333;
+    border-radius: 5px;
+    border: 0;
+    margin-right: 15px
+}
+
+.vcode-input:last-child {
+    margin-right: 0
+}
+
+.verification-otp {
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.verification-otp .btn {
+    width: 250px
+}
+
+.input-code {
+    background: #903e98;
+    padding: 40px 20px
+}
+
+.input-code h2 {
+    font-family: "OpenSansRegular", Helvetica, Sans-serif;
+    font-size: 20px;
+    color: #fff;
+    margin: 0 0 60px
+}
+
+.input-code h3 {
+    font-family: "OpenSansRegular", Helvetica, Sans-serif;
+    font-size: 18px;
+    margin: 0 0 20px;
+    color: #fff
+}
+
+.input-code p {
+    font-family: "OpenSansRegular", Helvetica, Sans-serif;
+    margin: 30px 0 0;
+    color: #fff
+}
+
+.verification-otp button {
+    padding: 10px;
+    margin: 30px 0
+}
+
+.verification-otp a {
+    color: #777;
+    text-decoration: underline;
+    margin-bottom: 40px
 }
