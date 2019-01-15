@@ -2454,7 +2454,7 @@ footer {
   .account-management .prof-info h3 {
     margin: 0;
     font-family: "NeoSans-regular", Helvetica, San serif;
-    font-size: 20px;
+    font-size: 18px;
     color: #ffffff; }
   .account-management .prof-info h5 {
     margin: 0;
@@ -2567,7 +2567,7 @@ footer {
     top: 10px;
     z-index: 10 !important;
     padding: 3px;
-    color: #000;
+    color: #19c514;
     width: 100%;
     text-align: right; }
 
