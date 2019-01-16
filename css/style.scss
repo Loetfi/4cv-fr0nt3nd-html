@@ -1906,7 +1906,7 @@ width: 1005;
 .box-price {
   position: relative;
   margin-top: -80px;
-  z-index: 9999;
+  z-index: 999;
   text-align: center;
   padding: 20px 0;
   margin-bottom: 40px;
@@ -2629,6 +2629,9 @@ from {
           }
         }
 
+        .goOut {
+          display: none !important;
+        }
 
 
         #gmap{

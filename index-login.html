@@ -46,13 +46,18 @@
 
 </head>
 <body><div class="preloader"></div>
+  <div id="notifAcv" class="notify">
+    <span class="warning slide-bottom">terimakasih, untuk meng aktifkan user anda silahkan lakukan. <strong><a href="email">verifikasi</a></strong>
+      <button id="notifButton" class="btn"><i class="fa fa-close"></i></button>
+    </span>
+  </div>
 
   <!-- MOBILE MENU -->
   <div class="fat-nav mobile-menu">
     <div class="fat-nav__wrapper">
       <ul>
         <li><a href="our-services.html">Layanan</a></li>
-        <li><a href="booking-inspection-page2.html">Ajukan Inspeksi</a></li>
+        <li><a href="booking-inspection-page2.html">Order Inspeksi</a></li>
         <li><a href="faq.html">FAQs</a></li>
         <li><a href="about-us.html">Tentang kami</a></li>
         <li><a href="contact-us.html">hubungi kami</a></li>
@@ -73,7 +78,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right main-menu">
           <li><a href="our-services.html">Layanan</a></li>
-          <li><a href="booking-inspection-page2.html">Ajukan Inspeksi</a></li>
+          <li><a href="booking-inspection-page2.html">Order Inspeksi</a></li>
           <li><a href="faq.html">FAQs</a></li>
           <li><a href="about-us.html">Tentang kami</a></li>
           <li><a href="contact-us.html">hubungi kami</a></li>
@@ -93,15 +98,15 @@
       </div>
 
 
-          <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-      </nav>
-      <header>
-        <div class="row-down">
-        </span><i class="fa fa-chevron-down"></i>
-      </div>
-      <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <header>
+    <div class="row-down">
+    </span><i class="fa fa-chevron-down"></i>
+  </div>
+  <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
           <!-- <ol class="carousel-indicators">
             <li data-target="#carouselHacked" data-slide-to="0" class="active"></li>
             <li data-target="#carouselHacked" data-slide-to="1"></li>
@@ -115,7 +120,7 @@
                   <h1>Cek kondisi mobil Anda secara akurat dan menyeluruh </h1>
                   <!-- <p data-wow-duration="" data-wow-delay="1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua.</p> -->
-                  <button type="button" class="btn btn-green f-bd mt20" data-toggle="modal" data-target="#squarespaceModal">Ajukan Inspeksi</button>
+                  <button type="button" class="btn btn-green f-bd mt20" data-toggle="modal" data-target="">Order Inspeksi</button>
                 </div>
               </div>
             </div>
@@ -128,7 +133,7 @@
                 <h1>Pastikan Legalitas Dokumen kendaraan anda</h1>
                 <!-- <p data-wow-duration="" data-wow-delay="1s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua.</p> -->
-                <button type="button" class="btn btn-green f-bd mt20" data-toggle="modal" data-target="#squarespaceModal">Ajukan Inspeksi</button>
+                <button type="button" class="btn btn-green f-bd mt20" data-toggle="modal" data-target="#squarespaceModal">Order Inspeksi</button>
               </div>
             </div>
           </div>
@@ -314,7 +319,7 @@
       <h2 class="tittle">Jual beli mobil bekas menjadi lebih aman dan nyaman</h2>
       <p>Laporan inspeksi transparan sehingga penjual dan pembeli pun saling percaya</p>
     </div>
-    <div class="col-md-4 tal-c"><a href="#myModal" data-toggle="modal">Ajukan inspeksi</a></div>
+    <div class="col-md-4 tal-c"><a href="#myModal" data-toggle="modal">Order Inspeksi</a></div>
   </div>
 </section>
 <section class="parallax-window" data-parallax="scroll" data-image-src="img/parallax3.jpg">
@@ -454,388 +459,116 @@
   </div>     
 
 
-  <!-- FORM BOOKING INSPECTION -->
-  <!-- line modal -->
-  <div class="modal modal-booking fade mt60" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-          <h3 class="modal-title" id="lineModalLabel">BOOKING INSPECTION</h3>
-        </div>
-        <div class="modal-body">
 
-          <!-- content goes here -->
-          <form class="form-horizontal">
-            <div class="col-md-12 bg-purple">
-              <div class="col-md-6 text-center"><h2>JADWAL DAN LOKASI INSPEKSI</h2></div>
-              <div class='col-sm-6'>
-                <div class="form-group">
-                  <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                      <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="frb frb-success col-md-6 opsi-location">
-                <input type="radio" id="radio-button-1" name="radio-button" value="1">
-                <label for="radio-button-1">
-                  <span class="frb-title">Alamat Pribadi</span>
-                  <div class="select-dropdown">
-                    <select class="form-control select-dropdown">
-                      <optgroup label="DKI Jakarta">
-                        <option value="volvo">Jakarta Barat</option>
-                        <option value="saab">Jakarta Timur</option>
-                        <option value="saab">Jakarta Selatan</option>
-                        <option value="saab">Jakarta Pusat</option>
-                        <option value="saab">Jakarta Utara</option>
-                      </optgroup>
-                      <optgroup label="Luar Jakarta">
-                        <option value="mercedes">Tanggerang Selatan</option>
-                        <option value="audi">Tanggerang</option>
-                        <option value="audi">Depok</option>
-                      </optgroup>
-                    </select>
-                  </div>
-                  <textarea class="form-control input-md" rows="2" placeholder="Alamat Lengkap" cols="2" name="comment" form="usrform"></textarea>
-                </label>
-              </div>
+  <!-- Dragable Testimonial Section -->
+  <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
 
-              <div class="frb frb-success col-md-6 opsi-location">
-                <input type="radio" id="radio-button-2" name="radio-button" value="2">
-                <label for="radio-button-2">
-                  <span class="frb-title">Pool IBID</span>
-                  <span class="frb-description mt20">
-                    <p>Jl. Ciputat Raya No.100</p>
-                    <p>Kebayoran Lama, Jakarta Selatan</p>
-                    <p>DKI Jakarta</p>
-                  </span>
-                </label>
-              </div>
-            </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/parallax.js" type="text/javascript"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/jquery.fatNav.js"></script>
 
+  <script>
+    $(window).load(function() {
+      $("#notifAcv").delay(1000).fadeIn(100);
+      $("#notifAcv").delay(4500).fadeOut(100);
+      $("#notifButton").click(function(){
+        $("#notifAcv").hide();
+      });
+    })
+  </script>
 
-            <div class="form-carding">
-              <h2><span>identitas</span> PIC</h2>
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="firstname">Nama Lengkap</label>  
-                <div class="col-md-8">
-                  <input id="firstname" name="firstname" placeholder="Nama Lengkap" class="form-control input-md" type="text">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="firstname">Nomor Telepon</label>  
-                <div class="col-md-8">
-                  <input id="firstname" name="firstname" placeholder="Ext: 08197689999" class="form-control input-md" type="text">
-                </div>
-              </div>
-            </div>
-            <div class="form-carding">
-              <h2><span>identitas</span> Kendaraan</h2>
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="firstname">Nomor Polisi</label>  
-                <div class="col-md-8">
-                  <input id="firstname" name="firstname" placeholder="ext: B 123 RF " class="form-control input-md" type="text">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="firstname">Merek</label>  
-                <div class="col-md-8">
-                  <input id="firstname" name="firstname" placeholder="Merek" class="form-control input-md" type="text">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="firstname">Seri</label>  
-                <div class="col-md-8">
-                  <input id="firstname" name="Seri" placeholder="Seri" class="form-control input-md" type="text">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="tahun">Tipe</label>  
-                <div class="col-md-8">
-                  <input id="firstname" name="Seri" placeholder="Tipe" class="form-control input-md" type="text">
-                </div>
-              </div>
+  <script>
+    new WOW().init();
+  </script>
 
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="tahun">Transmisi</label>  
-                <div class="col-md-8">
-                  <select id="appointmentfor" name="appointmentfor" class="form-control">
-                    <option value="matic">Pilih Transmisi</option>
-                    <option value="matic">Matic</option>
-                    <option value="manual">Manual</option>
-                  </select>
-                </div>
-              </div>
+  <script>
+    (function() {
+      $.fatNav();
+    }());
+  </script> 
 
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="tahun">Tahun</label>  
-                <div class="col-md-8">
-                  <input id="firstname" name="Seri" placeholder="Tahun" class="form-control input-md" type="text">
-                </div>
-              </div>
+  <!-- RADIO BUTTON STYLE POPUP ORDER INSPECTION -->
+  <script>
+    $('#radioBtn a').on('click', function(){
+      var sel = $(this).data('title');
+      var tog = $(this).data('toggle');
+      $('#'+tog).prop('value', sel);
+
+      $('a[data-toggle="'+tog+'"]').not('[data-title="'+sel+'"]').removeClass('active').addClass('notActive');
+      $('a[data-toggle="'+tog+'"][data-title="'+sel+'"]').removeClass('notActive').addClass('active');
+    })
+  </script>
+
+  <!-- splash screen while page loading -->
+  <script type="text/javascript">
+    $(window).load(function() {
+      $(".preloader").delay(1000).fadeOut("slow");
+    })
+  </script>
+
+  <!-- TESTIMONIAL SCROLL -->
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $("#testimonial-acv").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            infinite: !0,
+            dots: !0
+          }
+        }, {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+          }
+        }, {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }]
+      });
+    });
+  </script>
+
+  <!-- FADEIN BIG SLIDER -->
+  <script>
+   $('#carouselHacked').carousel();
+ </script>
+
+ <!-- NAVIGATION -->
+ <script>
+  var $jnoc = jQuery.noConflict();
+  $jnoc(document).on("scroll", function() {
+    if($jnoc(document).scrollTop()>20) {
+      $jnoc("nav").removeClass("large").addClass("small");
+    } else {
+      $jnoc("nav").removeClass("small").addClass("large");
+    }
+  });
+</script>
+
+<!-- PARALLAX -->
+<script>
+  $(document).scroll(function () {  
+    var $movebg = $(window).scrollTop() * -0.3;
+    $('.parallax').css('background-positionY', ($movebg) + 'px');
+  });
+</script>
 
 
-              <div class="form-group mt20">
-                <label class="col-md-4 control-label" for="tahun">Kepemilikan</label>  
-                <div class="col-md-8">
-                  <div class="input-group">
-                    <div id="radioBtn" class="btn-group">
-                      <a class="btn btn-primary btn-sm active" data-toggle="happy" data-title="Y">Pribadi</a>
-                      <a class="btn btn-primary btn-sm notActive" data-toggle="happy" data-title="N">Perusahaan</a>
-                    </div>
-                    <input type="hidden" name="happy" id="happy">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form-order-act">
-              <label class="check mb30">
-                <input type="checkbox"  name="is_name">
-                <span class="checkmark"></span>i agree to the terms of services and will adhere to the unconditionally <a href="index.html" target="_blank">read more</a>
-              </label>
-              <div class="btn-group col-md-8 col-md-offset-4 mb30">
-                <span class="col-md-6 col-sm-6 col-xs-12">
-                  <button class="btn btn-line-cancel btn-block">cancel</button>
-                </span>  
-                <span class="col-md-6 col-sm-6 col-xs-12">
-                  <button onclick="window.location.href="" class="btn btn-info btn-block uppercase">Booking</button>
-                </span>
-              </div>
-            </div>  
-          </form>
-
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- POPUP REGISTRATION -->
-  <!-- line modal -->
-  <div class="modal modal-registration fade mt60" id="ModalRegistration" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-    <div class="modal-dialog w900">
-      <div class="modal-content">
-        <div class="modal-body">
-         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-
-         <div class="col-md-6 p-info">
-          <span class="overlay-medium-light">
-           <p>" bergabunglah bersama komunitas otomotif dan percayakan inspeksi kendaraan anda bersama kami "</p>
-         </span>
-       </div>
-
-
-       <div class="col-md-6 p25">
-        <h3 class="text-center">Daftar Akun Baru</h3>
-        <form class="form-default">
-          <fieldset>  
-            <div class="form-group">  
-              <div class="col-md-12">
-                <input id="firstname" name="firstname" placeholder="Nama Lengkap" class="form-control input-md" type="text">
-              </div>
-            </div>
-            <div class="form-group">  
-              <div class="col-md-12">
-                <input id="firstname" name="firstname" placeholder="Email" class="form-control input-md" type="text">
-              </div>
-            </div>
-            <div class="form-group"> 
-              <div class="col-md-12 input-notification">
-                <input id="firstname" name="firstname" placeholder="Ext: 08197689999" class="form-control input-md" type="text"><span>Pastikan nomor yang anda masukan <strong>benar</strong> agar mudah melakukan verifikasi</span>
-              </div>
-            </div>
-            <div class="form-group"> 
-              <div class="col-md-12">
-                <input id="password" name="firstname" placeholder="Masukan Password" class="form-control input-md" type="password">
-              </div>
-            </div>
-            <div class="form-group"> 
-              <div class="col-md-12 input-notification">
-                <input id="firstname" name="firstname" placeholder="Ulangi kata sandi" class="form-control input-md" type="text"><span>Kata sandi tidak sama</span>
-              </div>
-            </div>
-            <div class="form-group text-right">
-              <button class="btn btn-line-info">cancel</button>
-              <button class="btn btn-green">Daftar</button>   
-            </div>
-          </fieldset>  
-        </form>
-      </div>
-
-    </div>
-
-  </div>
-</div>
-</div>
-
-<!-- POPUP LOGIN -->
-<!-- line modal -->
-<div class="modal modal-registration fade mt60" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content bg-pattern-city">
-      <div class="modal-body">
-       <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-       <div class="col-md-12 p25">
-        <div class="form-registration form-default">
-          <div class="col-md-6">
-            <h3 class="text-center mb30">Masuk Akun</h3>
-            <div>
-              <form>
-                <fieldset>  
-                  <div class="form-group"> 
-                    <div class="col-md-12">
-                      <input id="username" name="username" placeholder="username" class="form-control input-md" type="text">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <div class="col-md-12">
-                      <input id="firstname" name="firstname" placeholder="password" type="password" class="form-control input-md" type="text">
-                    </div>
-                  </div>
-                  <div class="form-group text-center">
-                    <div class="col-md-12">
-                      <button class="btn btn-info btn-block">Masuk Sekarang</button>
-                    </div>
-                  </div>
-                </fieldset>  
-              </form>  
-            </div>
-          </div>
-        </div>
-        <div class="form-registration form-default">
-          <div class="col-md-6 borer">
-            <h3 class="text-center mb30">Gunakan Social Media</h3>
-            <div>
-              <form>
-                <fieldset>  
-                  <div class="form-group"> 
-                    <div class="login-socialmedia register-socialmedia">
-                              <!-- <a href="javascript:void(0);" class="login-facebook"><span class="ic ic-facebook"></span>Masuk via Facebook</a>
-                                <a href="//ibid.astra.co.id/omni/twitter/twitter" class="login-twitter"><span class="ic ic-twitter"></span>Masuk via Twitter</a> -->
-                                <a href="https://accounts.google.com/o/oauth2/auth?response_type=code&amp;redirect_uri=https%3A%2F%2Fibid.astra.co.id%2Findex.php%2Fomni%2Fgoogle%2Fcallback&amp;client_id=874687288066-f2n0vhd3kjp1m2cg66epemtgbpm7c8p2.apps.googleusercontent.com&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&amp;access_type=online&amp;approval_prompt=auto" class="login-google"><span class="ic ic-google"></span>Masuk via Google</a>
-                                <!--  <a href="//ibid.astra.co.id/omni/linkedin/linkedin/" class="login-linkedin"><span class="ic ic-linkedin"></span>Daftar via Linkedin</a> -->
-                              </div>
-                              <div class="text-center mt30 login-socialmedia-help">
-                                <p>belum punya akun? <a href="registration-page.html">Daftar disini</a></p>
-                                <p>atau lupa password ?<a href="password-reset.html"> Reset password</a></p>
-                              </div>
-                            </div>
-                          </fieldset>  
-                        </form>  
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Dragable Testimonial Section -->
-          <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
-          <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
-
-          <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-          <script src="js/jquery.min.js"></script>
-          <script src="js/bootstrap.min.js"></script>
-          <script src="js/parallax.js" type="text/javascript"></script>
-          <script src="js/wow.js"></script>
-          <script src="js/jquery.fatNav.js"></script>
-
-
-
-          <script>
-            new WOW().init();
-          </script>
-
-          <script>
-            (function() {
-              $.fatNav();
-            }());
-          </script> 
-
-          <!-- RADIO BUTTON STYLE POPUP ORDER INSPECTION -->
-          <script>
-            $('#radioBtn a').on('click', function(){
-              var sel = $(this).data('title');
-              var tog = $(this).data('toggle');
-              $('#'+tog).prop('value', sel);
-
-              $('a[data-toggle="'+tog+'"]').not('[data-title="'+sel+'"]').removeClass('active').addClass('notActive');
-              $('a[data-toggle="'+tog+'"][data-title="'+sel+'"]').removeClass('notActive').addClass('active');
-            })
-          </script>
-
-          <!-- splash screen while page loading -->
-          <script type="text/javascript">
-            $(window).load(function() {
-              $(".preloader").delay(1000).fadeOut("slow");
-            })
-          </script>
-
-          <!-- TESTIMONIAL SCROLL -->
-          <script type="text/javascript">
-            $(document).on('ready', function() {
-              $("#testimonial-acv").slick({
-                dots: true,
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                responsive: [{
-                  breakpoint: 1024,
-                  settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                    infinite: !0,
-                    dots: !0
-                  }
-                }, {
-                  breakpoint: 600,
-                  settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
-                  }
-                }, {
-                  breakpoint: 480,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                  }
-                }]
-              });
-            });
-          </script>
-
-          <!-- FADEIN BIG SLIDER -->
-          <script>
-           $('#carouselHacked').carousel();
-         </script>
-
-         <!-- NAVIGATION -->
-         <script>
-          var $jnoc = jQuery.noConflict();
-          $jnoc(document).on("scroll", function() {
-            if($jnoc(document).scrollTop()>20) {
-              $jnoc("nav").removeClass("large").addClass("small");
-            } else {
-              $jnoc("nav").removeClass("small").addClass("large");
-            }
-          });
-        </script>
-
-        <!-- PARALLAX -->
-        <script>
-          $(document).scroll(function () {  
-            var $movebg = $(window).scrollTop() * -0.3;
-            $('.parallax').css('background-positionY', ($movebg) + 'px');
-          });
-        </script>
-
-
-      </body>
-      </html>
+</body>
+</html>
 
