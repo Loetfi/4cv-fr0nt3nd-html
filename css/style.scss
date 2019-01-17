@@ -1635,17 +1635,36 @@ width: 1005;
 }
 
  .parallax-services-height {
-  padding: 0;
-  min-height: 700px;
-  height: auto !important;
-  background: transparent;
-  position: relative;
-  color: #ffffff;
+    padding: 0;
+    min-height: 700px;
+    height: auto !important;
+    background: transparent;
+    position: relative;
+    color: #ffffff;
   p {
     color: #ffffff;
   }
   h2 {
     margin-top: 100px;
+  }
+}
+
+.bg-big {
+    position: relative;
+    padding: 120px 0;
+    background-image: url(../img/faq-bg4-grad.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  h2{color :#ffffff;
+  }
+  p{color :#ffffff;
+    z-index:99999 !important;
+  }
+  .overlay {
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    display: block;
   }
 }
 

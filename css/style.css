@@ -1505,6 +1505,23 @@ nav {
   .parallax-services-height h2 {
     margin-top: 100px; }
 
+.bg-big {
+  position: relative;
+  padding: 120px 0;
+  background-image: url(../img/faq-bg4-grad.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .bg-big h2 {
+    color: #ffffff; }
+  .bg-big p {
+    color: #ffffff;
+    z-index: 99999 !important; }
+  .bg-big .overlay {
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    display: block; }
+
 .overlay {
   height: 100%;
   width: 100%;
