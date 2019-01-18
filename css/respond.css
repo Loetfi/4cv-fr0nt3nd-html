@@ -161,6 +161,7 @@
 	.usp .number {text-align: center;font-size:26px;}
 	.usp img {margin-top: 30px;}
 	.foot-menu li {text-align: center;}
+	.carousel, .carousel-inner, .carousel-inner .item {height: 60vh !important;}
 	.carousel-caption h1 {font-size: 28px !important;margin-bottom: 30px;}
 	.car-float {display: none !important;}
 	.advantage {background-image: none !important;}
