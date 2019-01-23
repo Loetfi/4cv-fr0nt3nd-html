@@ -246,7 +246,7 @@ h3 {font-size: 16px;}
 .col-white {color: #ffffff}
 .bg-white {background-color: #ffffff;}
 .bg-purple{background-color: $purple-light;}
-.bg-grey{background-color: #f8f8f8;}
+.bg-grey{background-color: #fbfbfb;}
 .bg-grey-dark{background-color: #f5edf5;display: inline-block;width: 100%;}
 .dis-b {display: block;}
 .wht {color: #ffffff !important}
@@ -359,6 +359,7 @@ section,
   font-family: $font-default;
   font-size: 16px;
   line-height: 1.4;
+  overflow-x: hidden;
 }
 
 p{
@@ -1264,6 +1265,9 @@ width: 1005;
 
   }
 
+.container {
+  position: relative;
+}
 
 .modal-term {
   .modal-header {
@@ -2156,8 +2160,17 @@ width: 1005;
       }
 
       .seo-text {
+        background-image: url(../img/bg-pattern-city.png);
+        background-repeat:repeat-x;
+        background-position: bottom center;
+        h2 {
+          font-size: 12px;
+          line-height: 1.6;
+        }
         padding: 15px 0;
-        p{font-size:12px;}
+        p{font-size:10px;
+          text-align: justify;
+        }
       }
 
       .hamburger {
@@ -2703,6 +2716,7 @@ from {
       .resume-booking {
         padding: 20px;
         text-align: center;
+
          h2 {
             line-height: 1.4;
             color:$purple-super-dark;
@@ -4473,9 +4487,9 @@ svg {
 .bs-wizard > .bs-wizard-step + .bs-wizard-step {}
 .bs-wizard > .bs-wizard-step .bs-wizard-stepnum {color: #c7c7c7; font-size: 13px;}
 .bs-wizard > .bs-wizard-step .bs-wizard-info {color: #999; font-size: 14px;}
-.bs-wizard > .bs-wizard-step > .bs-wizard-dot {position: absolute; width: 30px; height: 30px; display: block; background: #f2d2f4; top: 45px; left: 50%; margin-top: -15px; margin-left: -15px; border-radius: 50%;} 
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot {position: absolute; width: 30px; height: 30px; display: block; background: #f2d2f4; top: 40px; left: 50%; margin-top: -15px; margin-left: -15px; border-radius: 50%;} 
 .bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {content: ' '; width: 20px; height: 20px; background: #9d4ba1; border-radius: 50px; position: absolute; top: 5px; left: 5px; } 
-.bs-wizard > .bs-wizard-step > .progress {position: relative; border-radius: 0px; height: 5px; box-shadow: none; margin: 23px 0;background-color: #edecec;}
+.bs-wizard > .bs-wizard-step > .progress {position: relative; border-radius: 0px; height: 5px; box-shadow: none; margin: 20px 0;background-color: #edecec;}
 .bs-wizard > .bs-wizard-step > .progress > .progress-bar {width:0px; box-shadow: none; background: #f2d2f4;}
 .bs-wizard > .bs-wizard-step.complete > .bs-wizard-stepnum {color: $purple-light;}
 .bs-wizard > .bs-wizard-step.active > .bs-wizard-stepnum {color: $purple-light;}
@@ -4533,6 +4547,19 @@ svg {
         }
       }
     }
+  }
+}
+
+.field-icon {
+  float: right;
+  margin-right: 10px;
+  margin-top: -33px;
+  position: relative;
+  z-index: 2;
+  color: #ccc;
+  font-size: 28px;
+  &:hover{
+    cursor:pointer;
   }
 }
 

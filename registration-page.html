@@ -122,7 +122,7 @@
                 <span>Mas Eko</span>
               </h2>
             </div>
-            <div class="box-shadow bg-white bg-pattern-city section-registration">
+            <div class="box-shadow bg-white bg-pattern-city section-registration col-md-12">
               <div class="form-registration form-default">
                 <div class="col-md-6 col-md-offset-1 border-right">
                   <h3 class="text-center">Daftar Akun Baru</h3>
@@ -141,20 +141,16 @@
                         </div>
                         <div class="form-group">
                           <div class="col-md-12">
-                            <input id="password" name="firstname" placeholder="Masukan Kata Sandi" class="form-control input-md" type="password">
+                             <input id="password-field" placeholder="Masukan Sandi" type="password" class="form-control" name="password" value="">
+                             <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                           </div>
                         </div>
-                        <div class="form-group">
-                          <div class="col-md-12 input-notification">
-                            <input id="firstname" name="firstname" placeholder="Ulangi kata sandi" class="form-control input-md" type="text"><span>Kata sandi tidak sama</span>
-                          </div>
-                        </div>
+
                         <div class="form-group text-center">
                           <button class="btn btn-info">Daftar Sekarang</button>
                         </fieldset>  
                       </form>  
                     </div>
-                  </div>
                 </div>
                 <div class="form-registration form-default">
                   <div class="col-md-4 borer">
@@ -295,6 +291,20 @@
         <script src="js/wow.js"></script>
         <script src="js/jquery.fatNav.js"></script>
         
+
+        <!-- password Show/hide -->
+        <script>
+          $(".toggle-password").click(function() {
+            $(this).toggleClass("fa-eye fa-eye-slash");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+              input.attr("type", "text");
+            } else {
+              input.attr("type", "password");
+            }
+          });
+        </script>
+
         <script>
           new WOW().init();
         </script>

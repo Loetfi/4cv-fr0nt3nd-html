@@ -285,7 +285,7 @@ h3 {
   background-color: #9e57a1; }
 
 .bg-grey {
-  background-color: #f8f8f8; }
+  background-color: #fbfbfb; }
 
 .bg-grey-dark {
   background-color: #f5edf5;
@@ -437,7 +437,8 @@ section:after {
 body {
   font-family: "open_sansregular", Helvetica, San serif;
   font-size: 16px;
-  line-height: 1.4; }
+  line-height: 1.4;
+  overflow-x: hidden; }
 
 p {
   font-family: "open_sansregular", Helvetica, San serif;
@@ -1193,6 +1194,9 @@ nav {
     border-radius: 0;
     overflow: hidden; }
 
+.container {
+  position: relative; }
+
 .modal-term .modal-header h3 {
   font-family: "NeoSans-bold", Helvetica, San serif; }
 .modal-term ol {
@@ -1936,9 +1940,16 @@ nav {
     margin: 0; }
 
 .seo-text {
+  background-image: url(../img/bg-pattern-city.png);
+  background-repeat: repeat-x;
+  background-position: bottom center;
   padding: 15px 0; }
+  .seo-text h2 {
+    font-size: 12px;
+    line-height: 1.6; }
   .seo-text p {
-    font-size: 12px; }
+    font-size: 10px;
+    text-align: justify; }
 
 .hamburger {
   display: none !important; }
@@ -3867,7 +3878,7 @@ ul.timeline > li:before {
   height: 30px;
   display: block;
   background: #f2d2f4;
-  top: 45px;
+  top: 40px;
   left: 50%;
   margin-top: -15px;
   margin-left: -15px;
@@ -3888,7 +3899,7 @@ ul.timeline > li:before {
   border-radius: 0px;
   height: 5px;
   box-shadow: none;
-  margin: 23px 0;
+  margin: 20px 0;
   background-color: #edecec; }
 
 .bs-wizard > .bs-wizard-step > .progress > .progress-bar {
@@ -3962,6 +3973,17 @@ ul.timeline > li:before {
       .dateInspection .clockIns ul li button:visited {
         background-color: #0053fc;
         color: #ffffff; }
+
+.field-icon {
+  float: right;
+  margin-right: 10px;
+  margin-top: -33px;
+  position: relative;
+  z-index: 2;
+  color: #ccc;
+  font-size: 28px; }
+  .field-icon:hover {
+    cursor: pointer; }
 
 .vcode-input {
   width: 50px;
