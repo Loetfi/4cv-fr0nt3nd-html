@@ -3874,38 +3874,53 @@ ul.timeline > li:before {
 
 .bs-wizard > .bs-wizard-step > .bs-wizard-dot {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   display: block;
   background: #f2d2f4;
-  top: 40px;
+  top: 42px;
   left: 50%;
   margin-top: -15px;
   margin-left: -15px;
   border-radius: 50%; }
 
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px #ecb4f0;
+  -moz-box-shadow: 0px 0px 10px 0px #ecb4f0;
+  box-shadow: 0px 0px 10px 0px #ecb4f0; }
+
 .bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {
   content: ' ';
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   background: #9d4ba1;
   border-radius: 50px;
   position: absolute;
-  top: 5px;
-  left: 5px; }
+  top: 4px;
+  left: 4px; }
 
 .bs-wizard > .bs-wizard-step > .progress {
   position: relative;
   border-radius: 0px;
   height: 5px;
   box-shadow: none;
-  margin: 20px 0;
+  margin: 18px 0;
   background-color: #edecec; }
 
 .bs-wizard > .bs-wizard-step > .progress > .progress-bar {
   width: 0px;
   box-shadow: none;
   background: #f2d2f4; }
+
+.bs-wizard > .bs-wizard-step.active > .progress {
+  background: #eabbed;
+  background: -moz-linear-gradient(left, #eabbed 0%, #edecec 92%, #edecec 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #eabbed), color-stop(92%, #edecec), color-stop(100%, #edecec));
+  background: -webkit-linear-gradient(left, #eabbed 0%, #edecec 92%, #edecec 100%);
+  background: -o-linear-gradient(left, #eabbed 0%, #edecec 92%, #edecec 100%);
+  background: -ms-linear-gradient(left, #eabbed 0%, #edecec 92%, #edecec 100%);
+  background: linear-gradient(to right, #eabbed 0%, #edecec 92%, #edecec 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eabbed', endColorstr='#edecec', GradientType=1 ); }
 
 .bs-wizard > .bs-wizard-step.complete > .bs-wizard-stepnum {
   color: #9e57a1; }
