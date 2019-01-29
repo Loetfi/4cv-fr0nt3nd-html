@@ -1755,7 +1755,7 @@ nav {
     -webkit-box-shadow: 0px 0px 75px -40px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 0px 75px -40px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 75px -40px rgba(0, 0, 0, 0.5);
-    min-height: 140px; }
+    min-height: 150px; }
     .box-price .box:hover {
       -webkit-box-shadow: 0px 0px 41px -11px rgba(99, 2, 99, 0.68);
       -moz-box-shadow: 0px 0px 41px -11px rgba(99, 2, 99, 0.68);
@@ -2098,7 +2098,7 @@ content: url("../img/icon/round-check.png") !important;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68025e', endColorstr='#9903a7', GradientType=1 ); }
   .cta-footer h2 {
     color: #ffffff;
-    margin: 0;
+    margin: 0 0 5px 0;
     font-size: 20px;
     font-family: "NeoSans-bold", Helvetica, San serif; }
   .cta-footer p {
@@ -3690,8 +3690,13 @@ ul.timeline > li:before {
     border-radius: 2px;
     color: #9e005d; }
 
+.sidebar {
+  float: left;
+  width: 350px;
+  border: 1px solid #000000; }
+
 .resume {
-  margin-top: 100px; }
+  margin-top: 90px; }
 
 .resume-box .summary-lst {
   margin-top: 20px;
