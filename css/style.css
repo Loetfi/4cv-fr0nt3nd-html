@@ -3375,6 +3375,9 @@ ul.timeline > li:before {
     float: right;
     margin: -25px 0 10px 0; }
 
+.bt-inf p {
+  font-size: 13px; }
+
 .lst-duo {
   -webkit-column-count: 2;
   /* Chrome, Safari, Opera */
@@ -3996,14 +3999,20 @@ ul.timeline > li:before {
 
 .field-icon {
   float: right;
-  margin-right: 10px;
-  margin-top: -33px;
+  right: 24px;
+  top: 16px;
   position: relative;
   z-index: 2;
   color: #ccc;
-  font-size: 28px; }
+  font-size: 28px;
+  position: absolute; }
   .field-icon:hover {
     cursor: pointer; }
+
+.pass-text {
+  font-size: 12px;
+  color: #fc6565;
+  line-height: 1.6; }
 
 .vcode-input {
   width: 50px;

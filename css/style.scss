@@ -3881,6 +3881,13 @@ ul.timeline > li:before {
     }
   }
 
+
+  .bt-inf {
+    p {
+      font-size: 13px;
+    }
+  }
+
   .lst-duo {
      -webkit-column-count: 2; /* Chrome, Safari, Opera */
       -moz-column-count: 2; /* Firefox */
@@ -4585,15 +4592,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eabbed', end
 
 .field-icon {
   float: right;
-  margin-right: 10px;
-  margin-top: -33px;
+  right: 24px;
+  top: 16px;
   position: relative;
   z-index: 2;
   color: #ccc;
   font-size: 28px;
+  position: absolute;
   &:hover{
     cursor:pointer;
   }
+}
+
+.pass-text {
+  font-size: 12px;
+  color: #fc6565;
+  line-height: 1.6;
 }
 
 
